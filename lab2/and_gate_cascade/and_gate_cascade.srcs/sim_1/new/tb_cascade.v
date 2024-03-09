@@ -46,6 +46,15 @@ begin
     cnt <= cnt + 1;
 end
 
+initial
+begin
+    while(1)
+    begin
+        #1 if (y != &x) $stop;
+        #1 if (&x) $finish;
+    end
+end
+
 cascade dut 
 (
     .x(x), //in
