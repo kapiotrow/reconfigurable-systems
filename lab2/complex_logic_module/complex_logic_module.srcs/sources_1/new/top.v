@@ -27,15 +27,25 @@ module top
     output z
 );
 
-wire [4:0] chain [7:0];
-
+wire [7:0] stage1;
+wire [3:0] stage2;
+wire [1:0] stage3;
 
 genvar i;
-genvar j;
 generate
-    for (i=0; i<4; i=i+1) begin
-        
+    for (i=0; i<8; i=i+1) begin
+        assign stage1[i] = x[i] & y[i];
     end
+
+    for (i=0; i<4; i=i+1) begin
+        assign stage2[i] = stage1[2*i] | stage1[2*i+1];
+    end
+
+    for (i=0; i<2; i=i+1) begin
+        assign stage3[i] = stage2[2*i] & stage2[2*i+1];
+    end
+
+    assign z = stage3[0] | stage3[1];
 endgenerate
 
 endmodule

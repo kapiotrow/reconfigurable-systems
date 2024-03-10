@@ -37,18 +37,9 @@ reg rst_r;
 always #1 clk_r = ~clk_r;
 
 initial begin
-    clk_r <= 0;
-    rst_r <= 1;
-    ce_r <= 0;
-
-    repeat(2) @ (posedge clk_r);
-    rst_r <= 0;
-
-    repeat(2) @ (posedge clk_r);
-    ce_r <= 1;
-
-    repeat(20) @ (posedge clk_r);
-    $finish;
+    clk_r <= 0; rst_r <= 1; ce_r <= 0;
+    #1; rst_r <= 0;
+    #1; ce_r <= 1;
 end
 
 assign clk = clk_r;

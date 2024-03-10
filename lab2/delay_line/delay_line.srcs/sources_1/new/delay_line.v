@@ -34,24 +34,24 @@ module delay_line
 wire [N-1:0] tdata [DELAY:0];
 
 genvar i;
-    generate
-        for(i=0; i<DELAY; i=i+1) 
-        begin
-            register 
-            # (
-                .N(N)
-            )
-            r_i
-            (
-                .clk(clk),
-                .d(tdata[i]),
-                .q(tdata[i+1])
-            );
-        end
+generate
+    for(i=0; i<DELAY; i=i+1) 
+    begin
+        register 
+        # (
+            .N(N)
+        )
+        r_i
+        (
+            .clk(clk),
+            .d(tdata[i]),
+            .q(tdata[i+1])
+        );
+    end
 endgenerate
 
 if(DELAY == 0)
-    assign idata = odata;
+    assign odata = idata;
 else
 begin
     assign odata = tdata[DELAY];

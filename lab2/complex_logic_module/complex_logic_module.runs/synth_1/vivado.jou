@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Sun Mar 10 12:50:28 2024
+# Process ID: 6164
+# Current directory: C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab2/complex_logic_module/complex_logic_module.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab2/complex_logic_module/complex_logic_module.runs/synth_1/top.vds
+# Journal file: C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab2/complex_logic_module/complex_logic_module.runs/synth_1\vivado.jou
+# Running On: LAPTOP-QPQJ1PK0, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 8, Host memory: 6386 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

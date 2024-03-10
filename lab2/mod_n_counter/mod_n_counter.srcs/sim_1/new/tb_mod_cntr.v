@@ -22,7 +22,7 @@
 
 module tb_mod_cntr
 # (
-    parameter N = 16,
+    parameter N = 4,
     parameter WIDTH = $clog2(N)
 )
 (
@@ -31,7 +31,7 @@ module tb_mod_cntr
 wire clk;
 wire ce;
 wire rst;
-wire [N-1:0] y;
+wire [WIDTH-1:0] y;
 
 stimulate st 
 (
