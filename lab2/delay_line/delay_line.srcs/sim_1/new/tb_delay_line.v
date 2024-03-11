@@ -23,7 +23,7 @@
 module tb_delay_line
 # (
     parameter N = 6,
-    parameter DELAY = 0
+    parameter DELAY = 8
 )
 (
 );
