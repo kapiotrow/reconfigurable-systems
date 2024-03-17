@@ -3,7 +3,7 @@
 Feb  9 2024
 00:36:40
 C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/stimulate.v,1710596950,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/verify.v,,stimulate,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/tb_serializer.v,1710152019,verilog,,,,tb_serializer,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/verify.v,1710596799,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/tb_serializer.v,,verify,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sources_1/new/serializer.v,1710151673,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/stimulate.v,,serializer,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/stimulate.v,1710691241,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/verify.v,,stimulate,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/tb_serializer.v,1710690621,verilog,,,,tb_serializer,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/verify.v,1710691623,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/tb_serializer.v,,verify,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sources_1/new/serializer.v,1710690968,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sim_1/new/stimulate.v,,serializer,,,,,,,,

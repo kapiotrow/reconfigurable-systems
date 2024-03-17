@@ -21,12 +21,14 @@
 
 
 module stimulate(
+    output clk,
+    output rst,
     output send,
     output [7:0] data
 );
 
 integer file;
-reg clk_r = 0;
+reg clk_r;
 reg [7:0] data_r = 0;
 reg send_r = 0;
 reg [7:0] i;
@@ -34,16 +36,18 @@ reg [7:0] i;
 always #1 clk_r = ~clk_r;
 
 initial begin
-    clk_r <= 0; file = $fopen("C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/data.bin", "rb");
-    for (i=0; i<4; i=i+1) begin
-        #1; clk_r = 0; data_r = $fgetc(file);
-        #1; send_r <= 1;
-        #2; send_r <=0;
-        #22;
+    clk_r <= 0;
+    file = $fopen("C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/data.bin", "rb");
+    for (i=0; i<16; i=i+1) begin
+        #1 data_r = $fgetc(file); send_r <= 1;
+        #2 send_r <= 0;
+        #20;
     end
     $fclose(file);
 end
 
+assign clk = clk_r;
+assign rst = 1'b0;
 assign send = send_r;
 assign data = data_r;
 

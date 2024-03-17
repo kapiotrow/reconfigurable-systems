@@ -46,24 +46,22 @@ always @(posedge clk) begin
         case (state)
             STATE0: //check for rising edge on send 
             begin
-                if (send == 1 && send_prev == 0) begin
+                if (send == 1 & send_prev == 0) begin
                     data_r <= data;
                     state <= STATE1;
                 end
             end
             STATE1: //send start bit
             begin
+                cnt <= 0;
                 txd_r <= 1'b1;
                 state <= STATE2;
             end
             STATE2: //send one bit of data
             begin
-                if (cnt < 8) begin
-                    cnt <= cnt + 1;
-                    txd_r <= data_r[0];
-                    txd_r <= txd_r >> 1;
-                end else begin
-                    cnt <= 0;
+                cnt <= cnt + 1;
+                txd_r <= data_r[cnt];
+                if (cnt == 3'b111) begin
                     state <= STATE3;
                 end
             end

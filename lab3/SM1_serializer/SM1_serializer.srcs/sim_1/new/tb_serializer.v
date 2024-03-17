@@ -27,9 +27,10 @@ wire rst;
 wire send;
 wire [7:0] data;
 wire txd;
-reg clk_r = 0;
 
 stimulate st(
+    .clk(clk),
+    .rst(rst),
     .send(send),
     .data(data)
 );
@@ -46,8 +47,5 @@ verify v(
     .txd(txd)
 );
 
-always #1 clk_r = ~clk_r;
-
-assign clk = clk_r;
 
 endmodule
