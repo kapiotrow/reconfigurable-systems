@@ -37,7 +37,7 @@ always #1 clk_r = ~clk_r;
 
 initial begin
     clk_r <= 0;
-    file = $fopen("C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/data.bin", "rb");
+    file = $fopen("C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart_transceiver/idata.bin", "rb");
     for (i=0; i<16; i=i+1) begin
         #1 data_r = $fgetc(file); send_r <= 1;
         #2 send_r <= 0;

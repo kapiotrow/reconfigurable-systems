@@ -28,7 +28,7 @@ integer file;
 reg [10:0] i = 0;
 
 initial begin
-    file = $fopen("C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/txd.bin","wb");
+    file = $fopen("C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart_transceiver/odata.bin","wb");
     for(i=0; i<500; i=i+1) begin
         #1 $fwrite(file,"%b", txd);
     end

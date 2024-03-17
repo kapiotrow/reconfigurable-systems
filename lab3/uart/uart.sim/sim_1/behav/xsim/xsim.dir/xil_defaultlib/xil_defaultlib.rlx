@@ -1,0 +1,10 @@
+0.7
+2020.2
+Feb  9 2024
+00:36:40
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sources_1/new/serializer.v,1710699798,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.srcs/sim_1/new/stimulate.v,,serializer,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM2_deserializer/SM2_deserializer.srcs/sources_1/new/deserializer.v,1710708912,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/SM1_serializer/SM1_serializer.srcs/sources_1/new/serializer.v,,deserializer,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.srcs/sim_1/new/stimulate.v,1710708968,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.srcs/sim_1/new/verify.v,,stimulate,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.srcs/sim_1/new/tb_uart.v,1710706710,verilog,,,,tb_uart,,,,,,,,
+C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.srcs/sim_1/new/verify.v,1710710982,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab3/uart/uart.srcs/sim_1/new/tb_uart.v,,verify,,,,,,,,

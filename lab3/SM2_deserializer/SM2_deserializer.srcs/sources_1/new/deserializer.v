@@ -23,41 +23,59 @@
 module deserializer(
     input clk,
     input rst,
-    input receive,
     input rxd,
-    output [7:0] txd
+    output receive,
+    output [7:0] data
 );
 
 localparam STATE0 = 2'd0;
 localparam STATE1 = 2'd1;
 localparam STATE2 = 2'd2;
-localparam STATE3 = 2'd3;
 
 reg [1:0] state = STATE0;
-reg [9:0] txd_r = 0;
-reg receive_prev = 0;
-reg rxd_r = 0;
-reg [3:0] cnt = 0;
+reg [7:0] data_r = 0;
+reg [7:0] data_r_out = 0;
+reg rxd_r_prev = 0;
+reg [2:0] cnt = 0;
+reg receive_r = 0;
+reg receive_r_out = 0;
 
 always @(posedge clk) begin
      if (rst) state <= STATE0;
      else begin
         case (state)
-            STATE0: //check for rising edge on receive
+            STATE0: //check for the start bit
             begin
-                if (receive == 1 & receive_prev == 0) begin
+                receive_r <= 0;
+                if (rxd == 1 & rxd_r_prev == 0) begin
                    state <= STATE1;
                    cnt <= 0;
                 end
             end
+
             STATE1: //receive data
             begin
-                txd_r[cnt] <= rxd;
+                data_r[cnt] <= rxd;
+                if (cnt == 3'b111) state <= STATE2;
                 cnt <= cnt + 1;
-                if (cnt == 4'b1100) state <= STATE2;
+            end
+
+            STATE2:
+            begin
+                receive_r <= 1;
+                state <= STATE0;
             end
         endcase
+        
+        if (receive_r == 1) begin
+            receive_r_out <= receive_r;
+            data_r_out <= data_r;
+        end else receive_r_out <= 0;
      end
+     rxd_r_prev <= rxd;
 end
+
+assign data = data_r_out;
+assign receive = receive_r_out;
 
 endmodule
