@@ -38,7 +38,7 @@ reg [1:0] state = STATE0;
 reg txd_r = 0;
 reg send_prev = 0;
 reg [7:0] data_r = 0;
-reg [3:0] cnt = 0;
+reg [2:0] cnt = 0;
 
 always @(posedge clk) begin
     if (rst) state <= STATE0;
@@ -53,8 +53,8 @@ always @(posedge clk) begin
             end
             STATE1: //send start bit
             begin
-                cnt <= 0;
-                txd_r <= 1'b1;
+                cnt = 0;
+                txd_r <= 1;
                 state <= STATE2;
             end
             STATE2: //send one bit of data
