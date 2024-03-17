@@ -23,11 +23,12 @@
 module serializer(
     input clk,
     input rst,
-    input send,
+    input send, //flag used to send data
     input [7:0] data,
     output txd
 );
 
+//parameters used to determine the current state of the FSM
 localparam STATE0 = 2'd0;
 localparam STATE1 = 2'd1;
 localparam STATE2 = 2'd2;

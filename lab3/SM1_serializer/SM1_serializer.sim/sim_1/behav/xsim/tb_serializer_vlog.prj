@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SM1_serializer.srcs/sources_1/new/serializer.v" \
+"../../../../SM1_serializer.srcs/sim_1/new/stimulate.v" \
+"../../../../SM1_serializer.srcs/sim_1/new/verify.v" \
+"../../../../SM1_serializer.srcs/sim_1/new/tb_serializer.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
