@@ -60,10 +60,10 @@ always @(posedge clk) begin
             STATE2: //send one bit of data
             begin
                 txd_r <= data_r[cnt];
-                cnt <= cnt + 1;
                 if (cnt == 3'b111) begin
                     state <= STATE3;
                 end
+                cnt <= cnt + 1;
             end
             STATE3: //send end bit
             begin

@@ -34,7 +34,7 @@ localparam STATE2 = 2'd2;
 localparam STATE3 = 2'd3;
 
 reg [1:0] state = STATE0;
-reg [7:0] txd_r = 0;
+reg [9:0] txd_r = 0;
 reg receive_prev = 0;
 reg rxd_r = 0;
 reg [3:0] cnt = 0;
@@ -52,7 +52,9 @@ always @(posedge clk) begin
             end
             STATE1: //receive data
             begin
-                
+                txd_r[cnt] <= rxd;
+                cnt <= cnt + 1;
+                if (cnt == 4'b1100) state <= STATE2;
             end
         endcase
      end
