@@ -2,3 +2,6 @@ Running: xsim.dir/tb_serializer_behav/xsimk.exe -simmode gui -wdb tb_serializer_
 Design successfully loaded
 Design Loading Memory Usage: 7928 KB (Peak: 7928 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8584 KB (Peak: 8584 KB)
+Simulation CPU Usage: 15 ms
