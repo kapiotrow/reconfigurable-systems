@@ -12,6 +12,5 @@ print(str[:40])
 
 with open("txd.bin", "r") as file:
     data_txd = file.read()
-    #data2print = data_txd.replace('\n', '')[4:]
 
 print(data_txd[4:44])
