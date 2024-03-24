@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../complex_module.srcs/sources_1/new/acc2m.v" \
+"../../../../complex_module.srcs/sources_1/new/accm.v" \
+"../../../../complex_module.srcs/sources_1/imports/new/delay_line.v" \
+"../../../../complex_module.srcs/sources_1/imports/new/register.v" \
+"../../../../complex_module.srcs/sources_1/new/tree.v" \
+"../../../../complex_module.srcs/sim_1/new/tb_tree.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

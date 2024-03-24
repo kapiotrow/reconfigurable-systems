@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../complex_module.gen/sources_1/ip/mul1/sim/mul1.vhd" \
+
+# Do not sort compile order
+nosort

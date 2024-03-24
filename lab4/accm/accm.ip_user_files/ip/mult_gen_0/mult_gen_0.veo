@@ -59,7 +59,7 @@ mult_gen_0 your_instance_name (
   .A(A),      // input wire [11 : 0] A
   .B(B),      // input wire [11 : 0] B
   .CE(CE),    // input wire CE
-  .P(P)      // output wire [23 : 0] P
+  .P(P)      // output wire [24 : 0] P
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

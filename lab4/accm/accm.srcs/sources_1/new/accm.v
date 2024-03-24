@@ -29,11 +29,10 @@ module accm #(
     input signed [N-1:0] A,
     input signed [N-1:0] B,
     input signed [N-1:0] C,
-    output signed [2*N-1:0] Y
+    output signed [2*N:0] Y
 );
 
 wire signed [N-1:0] sum;
-wire signed [2*N-1:0] result;
 wire signed [N-1:0] Cdel;
 
 // latency = 2
@@ -54,6 +53,7 @@ delay_line #(
     .odata(Cdel)
 );
 
+//latency 3
 mult_gen_0 mul0 (
     .A(sum),
     .B(Cdel),

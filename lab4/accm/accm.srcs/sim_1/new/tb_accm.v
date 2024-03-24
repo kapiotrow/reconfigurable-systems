@@ -24,7 +24,7 @@ module tb_accm #(
     parameter N = 12
 )
 ();
-    wire signed [2*N-1:0] Y;
+    wire signed [2*N:0] Y;
     reg clk = 0;
     reg ce = 0;
     
@@ -40,6 +40,7 @@ initial begin
     B <= 12'hCDa;
     C <= 12'h243;
 end
+
 initial #40 $finish;
 
 accm dut

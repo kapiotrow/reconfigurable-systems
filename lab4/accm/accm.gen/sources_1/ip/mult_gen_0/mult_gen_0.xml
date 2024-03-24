@@ -232,11 +232,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:50:08 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2fafffab</spirit:value>
+            <spirit:value>9:06126874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -250,11 +250,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2fafffab</spirit:value>
+            <spirit:value>9:06126874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -268,11 +268,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2fafffab</spirit:value>
+            <spirit:value>9:06126874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -297,11 +297,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9ca3381f</spirit:value>
+            <spirit:value>9:55bf767b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -316,11 +316,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2fafffab</spirit:value>
+            <spirit:value>9:06126874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -336,11 +336,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9ca3381f</spirit:value>
+            <spirit:value>9:55bf767b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -365,11 +365,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2fafffab</spirit:value>
+            <spirit:value>9:06126874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -385,11 +385,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 23 18:40:23 UTC 2024</spirit:value>
+            <spirit:value>Sat Mar 23 22:00:19 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2fafffab</spirit:value>
+            <spirit:value>9:06126874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -516,7 +516,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_HIGH&apos;)) - spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_LOW&apos;)))">23</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_HIGH&apos;)) - spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_LOW&apos;)))">24</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -579,7 +579,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_OUT_HIGH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUT_HIGH">23</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUT_HIGH">24</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_OUT_LOW</spirit:name>
@@ -993,7 +993,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Use_Custom_Output_Width</spirit:name>
-      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Use_Custom_Output_Width" spirit:order="12">false</spirit:value>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.Use_Custom_Output_Width" spirit:order="12">true</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1004,22 +1004,22 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>OutputWidthHigh</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OutputWidthHigh" spirit:order="13" spirit:minimum="0" spirit:maximum="127" spirit:rangeType="long">23</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OutputWidthHigh" spirit:order="13" spirit:minimum="0" spirit:maximum="127" spirit:rangeType="long">24</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.OutputWidthHigh">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.OutputWidthHigh">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>OutputWidthLow</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OutputWidthLow" spirit:order="14" spirit:minimum="0" spirit:maximum="23" spirit:rangeType="long">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OutputWidthLow" spirit:order="14" spirit:minimum="0" spirit:maximum="24" spirit:rangeType="long">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.OutputWidthLow">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.OutputWidthLow">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -1109,6 +1109,7 @@
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ClockEnable" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Multiplier_Construction" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.OutputWidthHigh" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PipeStages" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PortAWidth" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PortBWidth" xilinx:valueSource="user"/>
