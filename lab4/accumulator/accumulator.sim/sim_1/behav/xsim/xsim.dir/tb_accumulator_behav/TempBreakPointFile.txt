@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+43,true,"C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/lab4/accumulator/accumulator.srcs/sim_1/new/tb_accumulator.v"
