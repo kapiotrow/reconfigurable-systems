@@ -393,12 +393,8 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Mar 24 19:31:31 UTC 2024</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3ba4343b</spirit:value>
+            <spirit:value>9:54c978cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
