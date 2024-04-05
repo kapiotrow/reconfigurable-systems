@@ -36,7 +36,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.2.2" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

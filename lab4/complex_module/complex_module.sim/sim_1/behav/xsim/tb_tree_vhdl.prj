@@ -1,6 +1,35 @@
 # compile vhdl design source files
+vhdl xbip_utils_v3_0_12  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vhdl c_reg_fd_v12_0_8  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_wrapper_v3_0_5  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_8  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_addsub_v3_0_8  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_addsub_v3_0_8  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
+
+vhdl c_addsub_v12_0_17  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
+
 vhdl xil_defaultlib  \
 "../../../../complex_module.gen/sources_1/ip/adder4/sim/adder4.vhd" \
+
+vhdl xbip_bram18k_v3_0_8  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_20  \
+"../../../../complex_module.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
 "../../../../complex_module.gen/sources_1/ip/mul2/sim/mul2.vhd" \
 "../../../../complex_module.gen/sources_1/ip/adder3/sim/adder3.vhd" \
 "../../../../complex_module.gen/sources_1/ip/adder2/sim/adder2.vhd" \

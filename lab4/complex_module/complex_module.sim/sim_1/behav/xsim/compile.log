@@ -1,0 +1,80 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.srcs/sources_1/new/acc2m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module acc2m
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.srcs/sources_1/new/accm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.srcs/sources_1/imports/new/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.srcs/sources_1/imports/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.srcs/sources_1/new/tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.srcs/sim_1/new/tb_tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" into library c_reg_fd_v12_0_8
+INFO: [VRFC 10-3107] analyzing entity 'c_reg_fd_v12_0_8_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_reg_fd_v12_0_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_5
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e2_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp58e5_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_wrapper_v3_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_8
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_8_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_8
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_8_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" into library xbip_addsub_v3_0_8
+INFO: [VRFC 10-3107] analyzing entity 'xbip_addsub_v3_0_8_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_addsub_v3_0_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" into library c_addsub_v12_0_17
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_17_lut6_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_17_base_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_17_fabric_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_17_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_17_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_17'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.gen/sources_1/ip/adder4/sim/adder4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_8
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_v3_0_8_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_v3_0_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_20
+INFO: [VRFC 10-3107] analyzing entity 'op_resize'
+INFO: [VRFC 10-3107] analyzing entity 'delay_line'
+INFO: [VRFC 10-3107] analyzing entity 'cc_compare'
+INFO: [VRFC 10-3107] analyzing entity 'luts'
+INFO: [VRFC 10-3107] analyzing entity 'mult18'
+INFO: [VRFC 10-3107] analyzing entity 'dsp'
+INFO: [VRFC 10-3107] analyzing entity 'hybrid'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_dist_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_sp_block_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_dp_block_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_syncmem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_scaled_adder'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_operation'
+INFO: [VRFC 10-3107] analyzing entity 'ccm'
+INFO: [VRFC 10-3107] analyzing entity 'three_input_adder'
+INFO: [VRFC 10-3107] analyzing entity 'multmxn_lut6'
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_v12_0_20_viv'
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_v12_0_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.gen/sources_1/ip/mul2/sim/mul2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mul2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.gen/sources_1/ip/adder3/sim/adder3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.gen/sources_1/ip/adder2/sim/adder2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.gen/sources_1/ip/mul1/sim/mul1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mul1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/lab4/complex_module/complex_module.gen/sources_1/ip/adder1/sim/adder1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder1'
