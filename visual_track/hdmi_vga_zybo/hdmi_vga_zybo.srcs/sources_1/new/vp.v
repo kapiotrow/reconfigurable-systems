@@ -33,9 +33,36 @@ module vp(
     output [23:0] pixel_out
 );
 
-assign de_out = de_in;
-assign h_sync_out = h_sync_in;
-assign v_sync_out = v_sync_in;
+reg r_de = 0;
+reg r_hsync = 0;
+reg r_vsync = 0;
+
+//delay sync signals
+always @(posedge clk)
+begin
+r_de <= de_in;
+r_hsync <= h_sync_in;
+r_vsync <= v_sync_in;
+end
+
+LUT lut1 (
+    .a(pixel_in[7:0]),
+    .clk(clk)
+);
+
+LUT lut2 (
+    .a(pixel_in[15:8]),
+    .clk(clk)
+);
+
+LUT lut3 (
+    .a(pixel_in[23:16]),
+    .clk(clk)
+);
+
 assign pixel_out = pixel_in;
+assign de_out = r_de;
+assign hsync_out = r_hsync;
+assign vsync_out = r_vsync;
 
 endmodule

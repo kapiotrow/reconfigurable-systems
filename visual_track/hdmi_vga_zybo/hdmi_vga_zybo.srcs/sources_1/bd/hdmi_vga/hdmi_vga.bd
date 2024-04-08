@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA0D53B55D7890773",
+      "boundary_crc": "0xC84CBE1939E81B41",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga",
       "name": "hdmi_vga",
@@ -103,11 +103,6 @@
           }
         }
       },
-      "hpd": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
       "hdmi_out_en": {
         "direction": "O",
         "left": "0",
@@ -133,6 +128,11 @@
       },
       "vga_pVSync": {
         "direction": "O"
+      },
+      "hdmi_hpd": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -329,7 +329,7 @@
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
-          "hpd"
+          "hdmi_hpd"
         ]
       },
       "xlconstant_1_dout": {

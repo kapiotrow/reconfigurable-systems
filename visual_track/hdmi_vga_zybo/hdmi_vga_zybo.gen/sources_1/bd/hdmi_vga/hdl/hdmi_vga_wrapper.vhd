@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Thu Mar 28 17:20:08 2024
+--Date        : Mon Apr  8 17:08:12 2024
 --Host        : WINDELL-P5S529P running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_vga_wrapper.bd
 --Design      : hdmi_vga_wrapper
@@ -14,6 +14,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity hdmi_vga_wrapper is
   port (
+    hdmi_hpd : out STD_LOGIC_VECTOR ( 0 to 0 );
     hdmi_in_clk_n : in STD_LOGIC;
     hdmi_in_clk_p : in STD_LOGIC;
     hdmi_in_data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -21,7 +22,6 @@ entity hdmi_vga_wrapper is
     hdmi_in_ddc_scl_io : inout STD_LOGIC;
     hdmi_in_ddc_sda_io : inout STD_LOGIC;
     hdmi_out_en : out STD_LOGIC_VECTOR ( 0 to 0 );
-    hpd : out STD_LOGIC_VECTOR ( 0 to 0 );
     sys_clock : in STD_LOGIC;
     vga_pBlue : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_pGreen : out STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -45,13 +45,13 @@ architecture STRUCTURE of hdmi_vga_wrapper is
     hdmi_in_ddc_sda_o : out STD_LOGIC;
     hdmi_in_ddc_sda_t : out STD_LOGIC;
     sys_clock : in STD_LOGIC;
-    hpd : out STD_LOGIC_VECTOR ( 0 to 0 );
     hdmi_out_en : out STD_LOGIC_VECTOR ( 0 to 0 );
     vga_pRed : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_pGreen : out STD_LOGIC_VECTOR ( 5 downto 0 );
     vga_pBlue : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_pHSync : out STD_LOGIC;
-    vga_pVSync : out STD_LOGIC
+    vga_pVSync : out STD_LOGIC;
+    hdmi_hpd : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component hdmi_vga;
   component IOBUF is
@@ -85,6 +85,7 @@ hdmi_in_ddc_sda_iobuf: component IOBUF
     );
 hdmi_vga_i: component hdmi_vga
      port map (
+      hdmi_hpd(0) => hdmi_hpd(0),
       hdmi_in_clk_n => hdmi_in_clk_n,
       hdmi_in_clk_p => hdmi_in_clk_p,
       hdmi_in_data_n(2 downto 0) => hdmi_in_data_n(2 downto 0),
@@ -96,7 +97,6 @@ hdmi_vga_i: component hdmi_vga
       hdmi_in_ddc_sda_o => hdmi_in_ddc_sda_o,
       hdmi_in_ddc_sda_t => hdmi_in_ddc_sda_t,
       hdmi_out_en(0) => hdmi_out_en(0),
-      hpd(0) => hpd(0),
       sys_clock => sys_clock,
       vga_pBlue(4 downto 0) => vga_pBlue(4 downto 0),
       vga_pGreen(5 downto 0) => vga_pGreen(5 downto 0),
