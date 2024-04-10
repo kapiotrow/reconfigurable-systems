@@ -1,9 +1,10 @@
 0.7
 2020.2
-Feb  9 2024
-00:36:40
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v,1711359627,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v,,hdmi_in,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v,1711358770,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,,hdmi_out,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,1711358770,verilog,,,,tb_hdmi,,,,,,,,
-C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,1711359990,verilog,,C:/Users/karol/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,,vp,,,,,,,,
+Oct 13 2023
+20:47:58
+C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/LUT/sim/LUT.v,1712740469,verilog,,C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v,,LUT,,,../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/c2c6,,,,,
+C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v,1712739066,verilog,,C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v,,hdmi_in,,,../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/c2c6,,,,,
+C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v,1712589792,verilog,,C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,,hdmi_out,,,../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/c2c6,,,,,
+C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,1712589792,verilog,,,,tb_hdmi,,,../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/c2c6,,,,,
+C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,1712741346,verilog,,C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,,vp,,,../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/c2c6,,,,,

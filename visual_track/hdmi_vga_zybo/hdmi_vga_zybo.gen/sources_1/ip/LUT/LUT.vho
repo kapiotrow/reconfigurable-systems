@@ -55,7 +55,7 @@ COMPONENT LUT
   PORT (
     a : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     clk : IN STD_LOGIC;
-    spo : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) 
+    qspo : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) 
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -68,7 +68,7 @@ your_instance_name : LUT
   PORT MAP (
     a => a,
     clk => clk,
-    spo => spo
+    qspo => qspo
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
 

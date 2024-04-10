@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr  8 17:08:13 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 10 11:15:57 2024" VIVADOVERSION="2023.2">
 
-  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" LEFT="0" NAME="hdmi_hpd" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
@@ -151,7 +151,7 @@
         <PARAMETER NAME="C_CLKOUT1_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="C_CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="200"/>
-        <PARAMETER NAME="C_CLKOUT1_REQUESTED_PHASE" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="C_CLKOUT1_SEQUENCE_NUMBER" VALUE="1"/>
         <PARAMETER NAME="C_CLKOUT2_1" VALUE="0000"/>
         <PARAMETER NAME="C_CLKOUT2_2" VALUE="0000"/>
@@ -462,7 +462,7 @@
         <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="96.948"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="200"/>
-        <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="0"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT1_SEQUENCE_NUMBER" VALUE="1"/>
         <PARAMETER NAME="CLKOUT1_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT2_DRIVES" VALUE="BUFG"/>
@@ -734,6 +734,7 @@
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_0" PORT="PixelClk"/>
+            <CONNECTION INSTANCE="vp_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="RefClk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
@@ -797,22 +798,22 @@
         <PORT DIR="I" NAME="pRst" SIGIS="undef"/>
         <PORT DIR="O" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
+            <CONNECTION INSTANCE="vp_0" PORT="pixel_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
+            <CONNECTION INSTANCE="vp_0" PORT="h_sync_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
+            <CONNECTION INSTANCE="vp_0" PORT="de_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
+            <CONNECTION INSTANCE="vp_0" PORT="v_sync_in"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -825,7 +826,7 @@
             <PORTMAP LOGICAL="DATA_P" PHYSICAL="TMDS_Data_p"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="dvi2rgb_0_RGB" NAME="RGB" TYPE="INITIATOR" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="RGB" TYPE="INITIATOR" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE"/>
             <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData"/>
@@ -863,24 +864,24 @@
             <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
+        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="vp_0_pixel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pData"/>
+            <CONNECTION INSTANCE="vp_0" PORT="pixel_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
+        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="vp_0_h_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pHSync"/>
+            <CONNECTION INSTANCE="vp_0" PORT="h_sync_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
+        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="vp_0_de_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVDE"/>
+            <CONNECTION INSTANCE="vp_0" PORT="de_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
+        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="vp_0_v_synv_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVSync"/>
+            <CONNECTION INSTANCE="vp_0" PORT="v_synv_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
@@ -910,7 +911,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="dvi2rgb_0_RGB" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="rgb_pVDE"/>
             <PORTMAP LOGICAL="DATA" PHYSICAL="rgb_pData"/>
@@ -919,6 +920,62 @@
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/vp_0" HWVERSION="1.0" INSTANCE="vp_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vp" VLNV="xilinx.com:module_ref:vp:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_vp_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="de_in" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="vp_0_de_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="h_sync_in" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pHSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="vp_0_h_sync_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="pixel_in" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="vp_0_pixel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="v_sync_in" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="v_synv_out" SIGIS="undef" SIGNAME="vp_0_v_synv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
     </MODULE>
     <MODULE COREREVISION="8" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
@@ -942,7 +999,7 @@
       <PARAMETERS>
         <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_xlconstant_1_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_xlconstant_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>

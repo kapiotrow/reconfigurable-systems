@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 25.03.2024 10:42:56
+// Create Date: 04/10/2024 10:53:01 AM
 // Design Name: 
 // Module Name: vp
 // Project Name: 
@@ -31,11 +31,15 @@ module vp(
     output h_sync_out,
     output v_sync_out,
     output [23:0] pixel_out
-);
-
+    );
+    
 reg r_de = 0;
 reg r_hsync = 0;
 reg r_vsync = 0;
+wire [7:0] pix1;
+wire [7:0] pix2;
+wire [7:0] pix3;
+wire [7:0] pix_and;
 
 //delay sync signals
 always @(posedge clk)
@@ -47,22 +51,27 @@ end
 
 LUT lut1 (
     .a(pixel_in[7:0]),
-    .clk(clk)
+    .clk(clk),
+    .qspo(pix1)
 );
 
 LUT lut2 (
     .a(pixel_in[15:8]),
-    .clk(clk)
+    .clk(clk),
+    .qspo(pix2)
 );
 
 LUT lut3 (
     .a(pixel_in[23:16]),
-    .clk(clk)
+    .clk(clk),
+    .qspo(pix3)
 );
 
-assign pixel_out = pixel_in;
+assign pix_and = pix1 & pix2 & pix3;
+assign pixel_out = {pix_and, pix_and, pix_and};
 assign de_out = r_de;
-assign hsync_out = r_hsync;
-assign vsync_out = r_vsync;
+assign h_sync_out = r_hsync;
+assign v_sync_out = r_vsync;
+assign sw = 0;
 
 endmodule

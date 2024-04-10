@@ -55,9 +55,9 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 LUT your_instance_name (
-  .a(a),      // input wire [7 : 0] a
-  .clk(clk),  // input wire clk
-  .spo(spo)  // output wire [7 : 0] spo
+  .a(a),        // input wire [7 : 0] a
+  .clk(clk),    // input wire clk
+  .qspo(qspo)  // output wire [7 : 0] qspo
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

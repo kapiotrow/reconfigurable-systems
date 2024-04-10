@@ -1,40 +1,48 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.30894",
-   "Default View_TopLeft":"-407,-196",
+   "Default View_ScaleFactor":"0.688548",
+   "Default View_TopLeft":"-457,-163",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port hdmi_in -pg 1 -lvl 0 -x -300 -y -20 -defaultsOSRD
-preplace port hdmi_in_ddc -pg 1 -lvl 4 -x 610 -y -110 -defaultsOSRD
-preplace port port-id_sys_clock -pg 1 -lvl 0 -x -300 -y 80 -defaultsOSRD
-preplace port port-id_vga_pHSync -pg 1 -lvl 4 -x 610 -y 10 -defaultsOSRD
-preplace port port-id_vga_pVSync -pg 1 -lvl 4 -x 610 -y 40 -defaultsOSRD
-preplace portBus hdmi_out_en -pg 1 -lvl 4 -x 610 -y 240 -defaultsOSRD
-preplace portBus vga_pRed -pg 1 -lvl 4 -x 610 -y -80 -defaultsOSRD
-preplace portBus vga_pGreen -pg 1 -lvl 4 -x 610 -y -50 -defaultsOSRD
-preplace portBus vga_pBlue -pg 1 -lvl 4 -x 610 -y -20 -defaultsOSRD
-preplace portBus hdmi_hpd -pg 1 -lvl 4 -x 610 -y 140 -defaultsOSRD
-preplace inst dvi2rgb_0 -pg 1 -lvl 2 -x 110 -y -20 -defaultsOSRD
-preplace inst rgb2vga_0 -pg 1 -lvl 3 -x 440 -y 0 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -180 -y 70 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 3 -x 440 -y 140 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 3 -x 440 -y 240 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 1 1 -80 -30n
-preplace netloc dvi2rgb_0_PixelClk 1 2 1 220 -20n
-preplace netloc rgb2vga_0_vga_pBlue 1 3 1 580 -20n
-preplace netloc rgb2vga_0_vga_pGreen 1 3 1 570 -50n
-preplace netloc rgb2vga_0_vga_pHSync 1 3 1 560 10n
-preplace netloc rgb2vga_0_vga_pRed 1 3 1 560 -80n
-preplace netloc rgb2vga_0_vga_pVSync 1 3 1 N 40
-preplace netloc sys_clock_1 1 0 1 -280 70n
-preplace netloc xlconstant_1_dout 1 3 1 N 240
-preplace netloc xlconstant_0_dout 1 3 1 N 140
-preplace netloc dvi2rgb_0_DDC 1 2 2 220 -110 NJ
-preplace netloc dvi2rgb_0_RGB 1 2 1 230 -60n
-preplace netloc hdmi_in_1 1 0 2 N -20 -90
-levelinfo -pg 1 -300 -180 110 440 610
-pagesize -pg 1 -db -bbox -sgen -420 -160 770 400
+preplace port hdmi_in -pg 1 -lvl 0 -x -350 -y 0 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -lvl 5 -x 880 -y 250 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -350 -y 110 -defaultsOSRD
+preplace port port-id_vga_pHSync -pg 1 -lvl 5 -x 880 -y 130 -defaultsOSRD
+preplace port port-id_vga_pVSync -pg 1 -lvl 5 -x 880 -y 160 -defaultsOSRD
+preplace portBus hdmi_hpd -pg 1 -lvl 5 -x 880 -y 310 -defaultsOSRD
+preplace portBus hdmi_out_en -pg 1 -lvl 5 -x 880 -y 410 -defaultsOSRD
+preplace portBus vga_pRed -pg 1 -lvl 5 -x 880 -y 40 -defaultsOSRD
+preplace portBus vga_pGreen -pg 1 -lvl 5 -x 880 -y 70 -defaultsOSRD
+preplace portBus vga_pBlue -pg 1 -lvl 5 -x 880 -y 100 -defaultsOSRD
+preplace inst dvi2rgb_0 -pg 1 -lvl 2 -x 90 -y 160 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -190 -y 110 -defaultsOSRD
+preplace inst rgb2vga_0 -pg 1 -lvl 4 -x 710 -y 100 -defaultsOSRD -resize 253 218
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 710 -y 310 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -x 710 -y 410 -defaultsOSRD
+preplace inst vp_0 -pg 1 -lvl 3 -x 400 -y 110 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 N 110
+preplace netloc clk_wiz_0_clk_out1 1 1 1 -100 110n
+preplace netloc dvi2rgb_0_PixelClk 1 2 2 250 220 560
+preplace netloc xlconstant_0_dout 1 4 1 N 310
+preplace netloc xlconstant_1_dout 1 4 1 N 410
+preplace netloc rgb2vga_0_vga_pRed 1 4 1 N 40
+preplace netloc rgb2vga_0_vga_pGreen 1 4 1 N 70
+preplace netloc rgb2vga_0_vga_pBlue 1 4 1 N 100
+preplace netloc rgb2vga_0_vga_pHSync 1 4 1 N 130
+preplace netloc rgb2vga_0_vga_pVSync 1 4 1 N 160
+preplace netloc dvi2rgb_0_vid_pData 1 2 1 220 100n
+preplace netloc dvi2rgb_0_vid_pHSync 1 2 1 230 100n
+preplace netloc dvi2rgb_0_vid_pVSync 1 2 1 260 120n
+preplace netloc dvi2rgb_0_vid_pVDE 1 2 1 240 80n
+preplace netloc vp_0_de_out 1 3 1 550 80n
+preplace netloc vp_0_h_sync_out 1 3 1 560 80n
+preplace netloc vp_0_v_synv_out 1 3 1 560 110n
+preplace netloc vp_0_pixel_out 1 3 1 540 50n
+preplace netloc hdmi_in_1 1 0 2 N 0 -90
+preplace netloc dvi2rgb_0_DDC 1 2 3 220 250 N 250 NJ
+levelinfo -pg 1 -350 -190 90 400 710 880
+pagesize -pg 1 -db -bbox -sgen -460 -250 1040 470
 "
 }
-0
+

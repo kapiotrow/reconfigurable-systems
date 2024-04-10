@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_dvi2rgb_0_0_synth_1'
+HD_PWD='C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.runs/hdmi_vga_dvi2rgb_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

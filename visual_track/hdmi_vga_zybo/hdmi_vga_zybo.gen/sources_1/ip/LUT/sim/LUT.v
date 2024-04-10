@@ -56,12 +56,12 @@
 module LUT (
   a,
   clk,
-  spo
+  qspo
 );
 
 input wire [7 : 0] a;
 input wire clk;
-output wire [7 : 0] spo;
+output wire [7 : 0] qspo;
 
   dist_mem_gen_v8_0_14 #(
     .C_FAMILY("zynq"),
@@ -78,11 +78,11 @@ output wire [7 : 0] spo;
     .C_HAS_QDPO_CLK(0),
     .C_HAS_QDPO_RST(0),
     .C_HAS_QDPO_SRST(0),
-    .C_HAS_QSPO(0),
+    .C_HAS_QSPO(1),
     .C_HAS_QSPO_CE(0),
     .C_HAS_QSPO_RST(0),
     .C_HAS_QSPO_SRST(0),
-    .C_HAS_SPO(1),
+    .C_HAS_SPO(0),
     .C_HAS_WE(0),
     .C_MEM_INIT_FILE("LUT.mif"),
     .C_ELABORATION_DIR("./"),
@@ -91,7 +91,7 @@ output wire [7 : 0] spo;
     .C_QCE_JOINED(0),
     .C_QUALIFY_WE(0),
     .C_READ_MIF(1),
-    .C_REG_A_D_INPUTS(1),
+    .C_REG_A_D_INPUTS(0),
     .C_REG_DPRA_INPUT(0),
     .C_SYNC_ENABLE(1),
     .C_WIDTH(8),
@@ -110,9 +110,9 @@ output wire [7 : 0] spo;
     .qdpo_rst(1'D0),
     .qspo_srst(1'D0),
     .qdpo_srst(1'D0),
-    .spo(spo),
+    .spo(),
     .dpo(),
-    .qspo(),
+    .qspo(qspo),
     .qdpo()
   );
 endmodule

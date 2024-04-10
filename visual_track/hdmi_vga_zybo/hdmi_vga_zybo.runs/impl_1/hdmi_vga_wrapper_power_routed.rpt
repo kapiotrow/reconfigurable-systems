@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon Apr  8 17:36:36 2024
+| Date             : Wed Apr 10 11:25:20 2024
 | Host             : WINDELL-P5S529P running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_vga_wrapper_power_routed.rpt -pb hdmi_vga_wrapper_power_summary_routed.pb -rpx hdmi_vga_wrapper_power_routed.rpx
 | Design           : hdmi_vga_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.347        |
+| Total On-Chip Power (W)  | 0.346        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.254        |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.036 |        9 |       --- |             --- |
-| Slice Logic              |     0.006 |     9885 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     2968 |     17600 |           16.86 |
-|   Register               |    <0.001 |     4889 |     35200 |           13.89 |
+| Clocks                   |     0.035 |        9 |       --- |             --- |
+| Slice Logic              |     0.006 |     9855 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     2960 |     17600 |           16.82 |
+|   Register               |    <0.001 |     4864 |     35200 |           13.82 |
 |   CARRY4                 |    <0.001 |      116 |      4400 |            2.64 |
 |   LUT as Distributed RAM |    <0.001 |       48 |      6000 |            0.80 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   F7/F8 Muxes            |    <0.001 |       63 |     17600 |            0.36 |
-|   Others                 |    <0.001 |      678 |       --- |             --- |
+|   Others                 |    <0.001 |      687 |       --- |             --- |
 |   LUT as Shift Register  |    <0.001 |      296 |      6000 |            4.93 |
 |   BUFR                   |     0.000 |        1 |        56 |            1.79 |
-| Signals                  |     0.008 |     7012 |       --- |             --- |
+| Signals                  |     0.007 |     6984 |       --- |             --- |
 | Block RAM                |     0.001 |      2.5 |        60 |            4.17 |
 | MMCM                     |     0.062 |        1 |         2 |           50.00 |
 | PLL                      |     0.110 |        1 |         2 |           50.00 |
 | I/O                      |     0.032 |       31 |       100 |           31.00 |
 | Static Power             |     0.093 |          |           |                 |
-| Total                    |     0.347 |          |           |                 |
+| Total                    |     0.346 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.068 |       0.064 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.067 |       0.063 |      0.004 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.111 |       0.106 |      0.006 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |

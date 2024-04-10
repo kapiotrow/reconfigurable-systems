@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Mon Apr  8 17:35:54 2024
+| Date         : Wed Apr 10 11:24:30 2024
 | Host         : WINDELL-P5S529P
 | Design       : design_1
 | Device       : xc7z010-clg400-1--

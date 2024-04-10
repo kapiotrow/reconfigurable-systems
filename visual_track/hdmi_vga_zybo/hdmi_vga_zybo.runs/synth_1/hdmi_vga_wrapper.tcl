@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.tcl"
+  variable script "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.runs/synth_1/hdmi_vga_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 8
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -78,31 +78,34 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.cache/wt [current_project]
-set_property parent.project_path C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.cache/wt [current_project]
+set_property parent.project_path C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language VHDL [current_project]
+set_property target_language Verilog [current_project]
+set_property board_part_repo_paths {C:/Users/User/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/vivado-library [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip [current_project]
+set_property ip_output_repo c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/User/Documents/studia/sem6/hasiok/hdmi_vga_zybo_src/lut.coe
-read_vhdl -library xil_defaultlib C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.vhd
-add_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_refclk/ila_refclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_pixclk/ila_pixclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_timing_workaround.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
+add_files c:/Users/User/Documents/studia/sem6/hasiok/hdmi_vga_zybo_src/lut2.coe
+read_verilog -library xil_defaultlib c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
+add_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_pixclk/ila_pixclk_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_timing_workaround.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/ila_refclk/ila_refclk_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -113,14 +116,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
-set_property used_in_implementation false [get_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+read_xdc C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
+set_property used_in_implementation false [get_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/utils_1/imports/synth_1/hdmi_vga_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
