@@ -1,0 +1,448 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Apr 14 14:00:45 2024
+# Process ID: 17580
+# Current directory: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1
+# Command line: vivado.exe -log rgb2ycbcr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2ycbcr.tcl
+# Log file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1/rgb2ycbcr.vds
+# Journal file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1\vivado.jou
+# Running On: WINDELL-P5S529P, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34029 MB
+#-----------------------------------------------------------
+source rgb2ycbcr.tcl -notrace
+Command: synth_design -top rgb2ycbcr -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6180
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1348.457 ; gain = 438.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1/.Xil/Vivado-17580-WINDELL-P5S529P/realtime/Multiplier_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1/.Xil/Vivado-17580-WINDELL-P5S529P/realtime/Multiplier_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/delay_line.v:23]
+	Parameter N bound to: 9 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/delay_line.v:44]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/register.v:23]
+	Parameter N bound to: 9 - type: integer 
+WARNING: [Synth 8-6104] Input port 'q' has an internal driver [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/register.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1/.Xil/Vivado-17580-WINDELL-P5S529P/realtime/Adder_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1/.Xil/Vivado-17580-WINDELL-P5S529P/realtime/Adder_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:23]
+WARNING: [Synth 8-3848] Net tdata[1] in module/entity delay_line does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/imports/new/delay_line.v:34]
+WARNING: [Synth 8-3848] Net h_sync_out in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:28]
+WARNING: [Synth 8-3848] Net v_synv_out in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:29]
+WARNING: [Synth 8-3848] Net pixel_ycbcr in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:30]
+WARNING: [Synth 8-3848] Net x[2][2] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[2][1] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[2][0] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[1][2] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[1][1] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[1][0] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[0][2] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[0][1] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net x[0][0] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:36]
+WARNING: [Synth 8-3848] Net vec[2] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:44]
+WARNING: [Synth 8-3848] Net vec[1] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:44]
+WARNING: [Synth 8-3848] Net vec[0] in module/entity rgb2ycbcr does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v:44]
+WARNING: [Synth 8-7129] Port h_sync_out in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_synv_out in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[23] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[22] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[21] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[20] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[19] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[18] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[17] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[16] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[15] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[14] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[13] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[12] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[11] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[10] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[9] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[8] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[7] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[6] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[5] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[4] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[3] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[2] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[1] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[0] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_sync_in in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_sync_in in module rgb2ycbcr is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1456.977 ; gain = 546.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1456.977 ; gain = 546.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1456.977 ; gain = 546.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1456.977 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP1[0].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP1[0].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP1[1].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP1[1].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP1[2].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP1[2].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP2[0].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP2[0].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP2[1].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP2[1].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP2[2].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersP2[2].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersVec[0].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersVec[0].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersVec[1].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersVec[1].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersVec[2].add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Adder/Adder/Adder_in_context.xdc] for cell 'addersVec[2].add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[0].muls[0].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[0].muls[0].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[0].muls[1].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[0].muls[1].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[0].muls[2].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[0].muls[2].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[1].muls[0].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[1].muls[0].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[1].muls[1].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[1].muls[1].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[1].muls[2].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[1].muls[2].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[2].muls[0].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[2].muls[0].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[2].muls[1].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[2].muls[1].mul'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[2].muls[2].mul'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.gen/sources_1/ip/Multiplier/Multiplier/Multiplier_in_context.xdc] for cell 'genblk1[2].muls[2].mul'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1551.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1551.574 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for \addersP1[0].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersP1[1].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersP1[2].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersP2[0].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersP2[1].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersP2[2].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersVec[0].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersVec[1].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \addersVec[2].add . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[0].muls[0].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[0].muls[1].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[0].muls[2].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[1].muls[0].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[1].muls[1].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[1].muls[2].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[2].muls[0].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[2].muls[1].mul . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk1[2].muls[2].mul . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port h_sync_out in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_synv_out in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[23] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[22] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[21] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[20] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[19] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[18] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[17] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[16] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[15] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[14] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[13] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[12] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[11] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[10] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[9] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[8] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[7] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[6] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[5] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[4] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[3] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[2] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[1] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_ycbcr[0] in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_sync_in in module rgb2ycbcr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_sync_in in module rgb2ycbcr is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[0].mul  has unconnected pin B[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[1].mul  has unconnected pin B[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[0].muls[2].mul  has unconnected pin B[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[0].mul  has unconnected pin B[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[1].mul  has unconnected pin B[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \genblk1[1].muls[2].mul  has unconnected pin B[8]
+INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Multiplier    |         9|
+|2     |Adder         |         9|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |Adder      |     9|
+|10    |Multiplier |     9|
+|19    |BUFG       |     1|
+|20    |FDRE       |    27|
+|21    |IBUF       |    25|
+|22    |OBUFT      |    26|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 189 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.574 ; gain = 546.543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.574 ; gain = 641.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1551.574 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1551.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 36906ff0
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 75 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1551.574 ; gain = 1032.477
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1551.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/synth_1/rgb2ycbcr.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rgb2ycbcr_utilization_synth.rpt -pb rgb2ycbcr_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 14:01:08 2024...

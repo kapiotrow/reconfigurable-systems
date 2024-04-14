@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Apr 14 13:58:21 2024
+# Process ID: 14272
+# Current directory: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/Multiplier_synth_1
+# Command line: vivado.exe -log Multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Multiplier.tcl
+# Log file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/Multiplier_synth_1/Multiplier.vds
+# Journal file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/rgb2ycbcr/rgb2ycbcr.runs/Multiplier_synth_1\vivado.jou
+# Running On: WINDELL-P5S529P, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34029 MB
+#-----------------------------------------------------------
+source Multiplier.tcl -notrace

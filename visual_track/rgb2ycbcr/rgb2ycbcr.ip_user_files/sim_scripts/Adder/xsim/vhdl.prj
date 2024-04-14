@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../rgb2ycbcr.gen/sources_1/ip/Adder/sim/Adder.vhd" \
+
+# Do not sort compile order
+nosort
