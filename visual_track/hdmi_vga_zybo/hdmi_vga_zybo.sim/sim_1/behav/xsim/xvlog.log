@@ -1,3 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/LUT_1/sim/LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module delay_line
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v" into library xil_defaultlib
