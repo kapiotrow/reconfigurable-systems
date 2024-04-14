@@ -140,9 +140,9 @@ delay_line #(.N(1), .DELAY(6))dl_de(
 assign RGB[0] = {10'b0, pixel_rgb[23:16]};
 assign RGB[1] = {10'b0, pixel_rgb[15:8]};
 assign RGB[2] = {10'b0, pixel_rgb[7:0]};
-assign pixel_ycbcr[23:16] = YCbCr[2];
+assign pixel_ycbcr[23:16] = YCbCr[0];
 assign pixel_ycbcr[15:8] = YCbCr[1];
-assign pixel_ycbcr[7:0] = YCbCr[0];
+assign pixel_ycbcr[7:0] = YCbCr[2];
 //conversion coefs
 assign x[0][0] = 18'h09917;
 assign x[0][1] = 18'h12c8b;

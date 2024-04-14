@@ -61,6 +61,18 @@ rgb2ycbcr_0 convert(
     .pixel_ycbcr(pix_mux[2])
 );
 
+//--------------tresholding-YCbCr-----------------------
+tresholding tr(
+    .de_in(de_mux[2]),
+    .h_sync_in(h_sync_mux[2]),
+    .v_sync_in(v_sync_mux[2]),
+    .pixel_in(pix_mux[2]), //apply tresholding to YCbCr values
+    .de_out(de_mux[3]),
+    .h_sync_out(h_sync_mux[3]),
+    .v_sync_out(v_sync_mux[3]),
+    .pixel_out(pix_mux[3])
+);
+
 //--------------tresholding-on-LUTs---------------------
 //delay sync signals
 delay_line #(.N(3), .DELAY(1)) dl (
@@ -93,28 +105,35 @@ LUT lut3 (
 always @(posedge clk)
 begin
     case(sw)
-        3'b000:
+        3'b000: //raw input
         begin
             r_pix <= pix_mux[0];
             r_de <= de_mux[0];
             r_hsync <= h_sync_mux[0];
             r_vsync <= v_sync_mux[0];
         end 
-        3'b100:
+        3'b100: //tresholding on LUTs
         begin
             r_pix <= pix_mux[1];
             r_de <= de_mux[1];
             r_hsync <= h_sync_mux[1];
             r_vsync <= v_sync_mux[1];
         end
-        3'b010:
+        3'b010: //YCbCr conversion
         begin
             r_pix <= pix_mux[2];
             r_de <= de_mux[2];
             r_hsync <= h_sync_mux[2];
             r_vsync <= v_sync_mux[2];
         end
-        default:
+        3'b001: //YCbCr conversion and tresholding
+        begin
+            r_pix <= pix_mux[3];
+            r_de <= de_mux[3];
+            r_hsync <= h_sync_mux[3];
+            r_vsync <= v_sync_mux[3];
+        end
+        default: //raw input
         begin
             r_pix <= pix_mux[0];
             r_de <= de_mux[0];

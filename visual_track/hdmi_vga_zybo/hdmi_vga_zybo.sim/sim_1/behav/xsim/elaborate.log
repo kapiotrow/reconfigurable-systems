@@ -48,6 +48,7 @@ Compiling module xil_defaultlib.register(N=1)
 Compiling module xil_defaultlib.delay_line(N=1,DELAY=6)
 Compiling module xil_defaultlib.rgb2ycbcr_default
 Compiling module xil_defaultlib.rgb2ycbcr_0
+Compiling module xil_defaultlib.tresholding
 Compiling module xil_defaultlib.register(N=3)
 Compiling module xil_defaultlib.delay_line(N=3,DELAY=1)
 Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="z...
