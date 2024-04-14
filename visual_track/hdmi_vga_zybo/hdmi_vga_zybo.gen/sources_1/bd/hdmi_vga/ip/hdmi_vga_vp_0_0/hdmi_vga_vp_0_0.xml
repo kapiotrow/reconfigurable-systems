@@ -106,7 +106,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b69aa216</spirit:value>
+            <spirit:value>9:f740c5b4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -118,7 +118,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f4a4d621</spirit:value>
+            <spirit:value>9:c3c60bdc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -132,11 +132,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 10 09:16:27 UTC 2024</spirit:value>
+            <spirit:value>Sun Apr 14 15:07:48 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f4a4d621</spirit:value>
+            <spirit:value>9:c3c60bdc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -150,11 +150,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 10 09:15:57 UTC 2024</spirit:value>
+            <spirit:value>Sun Apr 14 15:04:44 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f4a4d621</spirit:value>
+            <spirit:value>9:c3c60bdc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -170,11 +170,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 10 09:15:57 UTC 2024</spirit:value>
+            <spirit:value>Sun Apr 14 15:04:44 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b69aa216</spirit:value>
+            <spirit:value>9:f740c5b4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -190,11 +190,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 10 09:15:57 UTC 2024</spirit:value>
+            <spirit:value>Sun Apr 14 15:04:44 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f4a4d621</spirit:value>
+            <spirit:value>9:c3c60bdc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -313,7 +313,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>v_synv_out</spirit:name>
+        <spirit:name>v_sync_out</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>

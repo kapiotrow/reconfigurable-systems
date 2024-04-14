@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Apr 10 11:15:51 2024
+//Date        : Sun Apr 14 17:04:43 2024
 //Host        : WINDELL-P5S529P running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi_vga_wrapper.bd
 //Design      : hdmi_vga_wrapper

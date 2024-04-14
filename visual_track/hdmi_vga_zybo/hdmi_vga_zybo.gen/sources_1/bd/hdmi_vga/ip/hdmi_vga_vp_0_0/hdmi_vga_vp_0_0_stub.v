@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Wed Apr 10 11:16:26 2024
+// Date        : Sun Apr 14 17:07:47 2024
 // Host        : WINDELL-P5S529P running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0_stub.v
+//               c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0_stub.v
 // Design      : hdmi_vga_vp_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
@@ -16,8 +16,8 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "vp,Vivado 2023.2" *)
 module hdmi_vga_vp_0_0(clk, de_in, h_sync_in, v_sync_in, pixel_in, sw, 
-  de_out, h_sync_out, v_synv_out, pixel_out)
-/* synthesis syn_black_box black_box_pad_pin="de_in,h_sync_in,v_sync_in,pixel_in[23:0],sw[2:0],de_out,h_sync_out,v_synv_out,pixel_out[23:0]" */
+  de_out, h_sync_out, v_sync_out, pixel_out)
+/* synthesis syn_black_box black_box_pad_pin="de_in,h_sync_in,v_sync_in,pixel_in[23:0],sw[2:0],de_out,h_sync_out,v_sync_out,pixel_out[23:0]" */
 /* synthesis syn_force_seq_prim="clk" */;
   input clk /* synthesis syn_isclock = 1 */;
   input de_in;
@@ -27,6 +27,6 @@ module hdmi_vga_vp_0_0(clk, de_in, h_sync_in, v_sync_in, pixel_in, sw,
   input [2:0]sw;
   output de_out;
   output h_sync_out;
-  output v_synv_out;
+  output v_sync_out;
   output [23:0]pixel_out;
 endmodule

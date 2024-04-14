@@ -63,7 +63,7 @@ module hdmi_vga_vp_0_0 (
   sw,
   de_out,
   h_sync_out,
-  v_synv_out,
+  v_sync_out,
   pixel_out
 );
 
@@ -77,7 +77,7 @@ input wire [23 : 0] pixel_in;
 input wire [2 : 0] sw;
 output wire de_out;
 output wire h_sync_out;
-output wire v_synv_out;
+output wire v_sync_out;
 output wire [23 : 0] pixel_out;
 
   vp inst (
@@ -89,7 +89,7 @@ output wire [23 : 0] pixel_out;
     .sw(sw),
     .de_out(de_out),
     .h_sync_out(h_sync_out),
-    .v_synv_out(v_synv_out),
+    .v_sync_out(v_sync_out),
     .pixel_out(pixel_out)
   );
 endmodule

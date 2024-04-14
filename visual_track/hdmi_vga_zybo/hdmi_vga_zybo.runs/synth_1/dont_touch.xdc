@@ -3,8 +3,8 @@
 
 # XDC: imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
 
-# IP: ip/LUT/LUT.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LUT || ORIG_REF_NAME==LUT} -quiet] -quiet
+# IP: ip/rgb2ycbcr_0_2/rgb2ycbcr_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==rgb2ycbcr_0 || ORIG_REF_NAME==rgb2ycbcr_0} -quiet] -quiet
 
 # Block Designs: bd/hdmi_vga/hdmi_vga.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga || ORIG_REF_NAME==hdmi_vga} -quiet] -quiet
@@ -27,11 +27,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga_xl
 # IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga_vp_0_0 || ORIG_REF_NAME==hdmi_vga_vp_0_0} -quiet] -quiet
 
+# IP: ip/rgb2ycbcr_0_2/rgb2ycbcr_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==rgb2ycbcr_0 || ORIG_REF_NAME==rgb2ycbcr_0} -quiet] -quiet
+
 # IP: ip/LUT/LUT.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LUT || ORIG_REF_NAME==LUT} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LUT || ORIG_REF_NAME==LUT} -quiet] -quiet
 
-# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/ip/LUT/LUT_ooc.xdc
+# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc
 
-# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/ip/LUT/LUT_ooc.xdc
-
-# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo_ok/hdmi_vga_zybo_ok.gen/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc
+# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/LUT/LUT_ooc.xdc

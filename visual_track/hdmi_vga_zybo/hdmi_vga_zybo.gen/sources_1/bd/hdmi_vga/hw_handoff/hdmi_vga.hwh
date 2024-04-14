@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 10 11:15:57 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 14 17:04:44 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -879,11 +879,7 @@
             <CONNECTION INSTANCE="vp_0" PORT="de_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="vp_0_v_synv_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="v_synv_out"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef"/>
         <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_pBlue"/>
@@ -969,11 +965,7 @@
             <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="v_synv_out" SIGIS="undef" SIGNAME="vp_0_v_synv_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>

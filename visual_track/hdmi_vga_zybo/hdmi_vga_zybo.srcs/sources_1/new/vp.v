@@ -33,45 +33,57 @@ module vp(
     output [23:0] pixel_out
     );
     
-reg r_de = 0;
-reg r_hsync = 0;
-reg r_vsync = 0;
-wire [7:0] pix1;
-wire [7:0] pix2;
-wire [7:0] pix3;
-wire [7:0] pix_and;
-
-//delay sync signals
-always @(posedge clk)
-begin
-r_de <= de_in;
-r_hsync <= h_sync_in;
-r_vsync <= v_sync_in;
-end
-
-LUT lut1 (
-    .a(pixel_in[7:0]),
+rgb2ycbcr_0 convert(
     .clk(clk),
-    .qspo(pix1)
+    .h_sync_in(h_sync_in),
+    .v_sync_in(v_sync_in),
+    .de_in(de_in),
+    .pixel_rgb(pixel_in),
+    .h_sync_out(h_sync_out),
+    .v_sync_out(v_sync_out),
+    .de_out(de_out),
+    .pixel_ycbcr(pixel_out)
 );
 
-LUT lut2 (
-    .a(pixel_in[15:8]),
-    .clk(clk),
-    .qspo(pix2)
-);
+//reg r_de = 0;
+//reg r_hsync = 0;
+//reg r_vsync = 0;
+//wire [7:0] pix1;
+//wire [7:0] pix2;
+//wire [7:0] pix3;
+//wire [7:0] pix_and;
 
-LUT lut3 (
-    .a(pixel_in[23:16]),
-    .clk(clk),
-    .qspo(pix3)
-);
+////delay sync signals
+//always @(posedge clk)
+//begin
+//r_de <= de_in;
+//r_hsync <= h_sync_in;
+//r_vsync <= v_sync_in;
+//end
 
-assign pix_and = pix1 & pix2 & pix3;
-assign pixel_out = {pix_and, pix_and, pix_and};
-assign de_out = r_de;
-assign h_sync_out = r_hsync;
-assign v_sync_out = r_vsync;
+//LUT lut1 (
+//    .a(pixel_in[7:0]),
+//    .clk(clk),
+//    .qspo(pix1)
+//);
+
+//LUT lut2 (
+//    .a(pixel_in[15:8]),
+//    .clk(clk),
+//    .qspo(pix2)
+//);
+
+//LUT lut3 (
+//    .a(pixel_in[23:16]),
+//    .clk(clk),
+//    .qspo(pix3)
+//);
+
+//assign pix_and = pix1 & pix2 & pix3;
+//assign pixel_out = {pix_and, pix_and, pix_and};
+//assign de_out = r_de;
+//assign h_sync_out = r_hsync;
+//assign v_sync_out = r_vsync;
 assign sw = 0;
 
 endmodule

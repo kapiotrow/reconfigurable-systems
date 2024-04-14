@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Apr 10 11:15:51 2024
+//Date        : Sun Apr 14 17:04:43 2024
 //Host        : WINDELL-P5S529P running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
+(* HW_HANDOFF = "hdmi_vga.hwdef" *) (* core_generation_info = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) 
 module hdmi_vga
    (hdmi_hpd,
     hdmi_in_clk_n,
@@ -31,18 +31,18 @@ module hdmi_vga
     vga_pRed,
     vga_pVSync);
   output [0:0]hdmi_hpd;
-  (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_N" *) input hdmi_in_clk_n;
-  (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_P" *) input hdmi_in_clk_p;
-  (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_N" *) input [2:0]hdmi_in_data_n;
-  (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_P" *) input [2:0]hdmi_in_data_p;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_I" *) input hdmi_in_ddc_scl_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_O" *) output hdmi_in_ddc_scl_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_T" *) output hdmi_in_ddc_scl_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_I" *) input hdmi_in_ddc_sda_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_O" *) output hdmi_in_ddc_sda_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_T" *) output hdmi_in_ddc_sda_t;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_N" *) input hdmi_in_clk_n;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_P" *) input hdmi_in_clk_p;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_N" *) input [2:0]hdmi_in_data_n;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_P" *) input [2:0]hdmi_in_data_p;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_I" *) input hdmi_in_ddc_scl_i;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_O" *) output hdmi_in_ddc_scl_o;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_T" *) output hdmi_in_ddc_scl_t;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_I" *) input hdmi_in_ddc_sda_i;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_O" *) output hdmi_in_ddc_sda_o;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_T" *) output hdmi_in_ddc_sda_t;
   output [0:0]hdmi_out_en;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN hdmi_vga_sys_clock, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN hdmi_vga_sys_clock, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;
   output [4:0]vga_pBlue;
   output [5:0]vga_pGreen;
   output vga_pHSync;
@@ -74,7 +74,6 @@ module hdmi_vga
   wire vp_0_de_out;
   wire vp_0_h_sync_out;
   wire [23:0]vp_0_pixel_out;
-  wire vp_0_v_synv_out;
   wire [0:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
 
@@ -123,7 +122,6 @@ module hdmi_vga
         .rgb_pData(vp_0_pixel_out),
         .rgb_pHSync(vp_0_h_sync_out),
         .rgb_pVDE(vp_0_de_out),
-        .rgb_pVSync(vp_0_v_synv_out),
         .vga_pBlue(rgb2vga_0_vga_pBlue),
         .vga_pGreen(rgb2vga_0_vga_pGreen),
         .vga_pHSync(rgb2vga_0_vga_pHSync),
@@ -138,8 +136,7 @@ module hdmi_vga
         .pixel_in(dvi2rgb_0_vid_pData),
         .pixel_out(vp_0_pixel_out),
         .sw({1'b0,1'b0,1'b0}),
-        .v_sync_in(dvi2rgb_0_vid_pVSync),
-        .v_synv_out(vp_0_v_synv_out));
+        .v_sync_in(dvi2rgb_0_vid_pVSync));
   hdmi_vga_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
   hdmi_vga_xlconstant_0_1 xlconstant_1

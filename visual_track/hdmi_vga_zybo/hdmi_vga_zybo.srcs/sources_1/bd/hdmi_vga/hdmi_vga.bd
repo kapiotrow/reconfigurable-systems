@@ -298,7 +298,7 @@
           "h_sync_out": {
             "direction": "O"
           },
-          "v_synv_out": {
+          "v_sync_out": {
             "direction": "O"
           },
           "pixel_out": {
@@ -417,7 +417,6 @@
       },
       "vp_0_v_synv_out": {
         "ports": [
-          "vp_0/v_synv_out",
           "rgb2vga_0/rgb_pVSync"
         ]
       },
