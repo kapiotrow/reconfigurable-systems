@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sun Apr 14 18:24:44 2024
+| Date             : Mon Apr 15 10:47:38 2024
 | Host             : WINDELL-P5S529P running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_vga_wrapper_power_routed.rpt -pb hdmi_vga_wrapper_power_summary_routed.pb -rpx hdmi_vga_wrapper_power_routed.rpx
 | Design           : hdmi_vga_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.351        |
+| Total On-Chip Power (W)  | 0.347        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.255        |
-| Device Static (W)        | 0.096        |
+| Dynamic (W)              | 0.254        |
+| Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 81.0         |
 | Junction Temperature (C) | 29.0         |
@@ -52,25 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.035 |        9 |       --- |             --- |
-| Slice Logic              |     0.006 |    10174 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     3029 |     17600 |           17.21 |
-|   Register               |    <0.001 |     4997 |     35200 |           14.20 |
-|   CARRY4                 |    <0.001 |      134 |      4400 |            3.05 |
+| Clocks                   |     0.036 |        9 |       --- |             --- |
+| Slice Logic              |     0.006 |     9885 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     2968 |     17600 |           16.86 |
+|   Register               |    <0.001 |     4889 |     35200 |           13.89 |
+|   CARRY4                 |    <0.001 |      116 |      4400 |            2.64 |
 |   LUT as Distributed RAM |    <0.001 |       48 |      6000 |            0.80 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   F7/F8 Muxes            |    <0.001 |       63 |     17600 |            0.36 |
-|   Others                 |    <0.001 |      777 |       --- |             --- |
-|   LUT as Shift Register  |    <0.001 |      298 |      6000 |            4.97 |
+|   Others                 |    <0.001 |      678 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |      296 |      6000 |            4.93 |
 |   BUFR                   |     0.000 |        1 |        56 |            1.79 |
-| Signals                  |     0.007 |     7228 |       --- |             --- |
+| Signals                  |     0.008 |     7012 |       --- |             --- |
 | Block RAM                |     0.001 |      2.5 |        60 |            4.17 |
 | MMCM                     |     0.062 |        1 |         2 |           50.00 |
 | PLL                      |     0.110 |        1 |         2 |           50.00 |
-| DSPs                     |     0.000 |        9 |        80 |           11.25 |
-| I/O                      |     0.033 |       31 |       100 |           31.00 |
-| Static Power             |     0.096 |          |           |                 |
-| Total                    |     0.351 |          |           |                 |
+| I/O                      |     0.032 |       31 |       100 |           31.00 |
+| Static Power             |     0.093 |          |           |                 |
+| Total                    |     0.347 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,9 +79,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.067 |       0.063 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.068 |       0.064 |      0.004 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.111 |       0.106 |      0.006 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -162,15 +161,15 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| hdmi_vga_wrapper         |     0.255 |
+| hdmi_vga_wrapper         |     0.254 |
 |   dbg_hub                |     0.005 |
 |     inst                 |     0.005 |
 |       BSCANID.u_xsdbm_id |     0.005 |
 |   hdmi_vga_i             |     0.249 |
 |     clk_wiz_0            |     0.110 |
 |       inst               |     0.110 |
-|     dvi2rgb_0            |     0.138 |
-|       U0                 |     0.138 |
+|     dvi2rgb_0            |     0.139 |
+|       U0                 |     0.139 |
 +--------------------------+-----------+
 
 

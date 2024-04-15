@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC84CBE1939E81B41",
+      "boundary_crc": "0xA9F915D9022A300E",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga",
       "name": "hdmi_vga",
@@ -15,8 +15,7 @@
       "clk_wiz_0": "",
       "rgb2vga_0": "",
       "xlconstant_0": "",
-      "xlconstant_1": "",
-      "vp_0": ""
+      "xlconstant_1": ""
     },
     "interface_ports": {
       "hdmi_in": {
@@ -134,6 +133,11 @@
       },
       "vga_pVSync": {
         "direction": "O"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
       }
     },
     "components": {
@@ -250,63 +254,6 @@
         "xci_name": "hdmi_vga_xlconstant_0_1",
         "xci_path": "ip\\hdmi_vga_xlconstant_0_1\\hdmi_vga_xlconstant_0_1.xci",
         "inst_hier_path": "xlconstant_1"
-      },
-      "vp_0": {
-        "vlnv": "xilinx.com:module_ref:vp:1.0",
-        "ip_revision": "1",
-        "xci_name": "hdmi_vga_vp_0_0",
-        "xci_path": "ip\\hdmi_vga_vp_0_0\\hdmi_vga_vp_0_0.xci",
-        "inst_hier_path": "vp_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "vp",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "hdmi_vga_dvi2rgb_0_0_PixelClk",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "de_in": {
-            "direction": "I"
-          },
-          "h_sync_in": {
-            "direction": "I"
-          },
-          "v_sync_in": {
-            "direction": "I"
-          },
-          "pixel_in": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
-          },
-          "sw": {
-            "direction": "I",
-            "left": "2",
-            "right": "0"
-          },
-          "de_out": {
-            "direction": "O"
-          },
-          "h_sync_out": {
-            "direction": "O"
-          },
-          "v_sync_out": {
-            "direction": "O"
-          },
-          "pixel_out": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -333,32 +280,31 @@
       "dvi2rgb_0_PixelClk": {
         "ports": [
           "dvi2rgb_0/PixelClk",
-          "rgb2vga_0/PixelClk",
-          "vp_0/clk"
+          "rgb2vga_0/PixelClk"
         ]
       },
       "dvi2rgb_0_vid_pData": {
         "ports": [
           "dvi2rgb_0/vid_pData",
-          "vp_0/pixel_in"
+          "rgb2vga_0/rgb_pData"
         ]
       },
       "dvi2rgb_0_vid_pHSync": {
         "ports": [
           "dvi2rgb_0/vid_pHSync",
-          "vp_0/h_sync_in"
+          "rgb2vga_0/rgb_pHSync"
         ]
       },
       "dvi2rgb_0_vid_pVDE": {
         "ports": [
           "dvi2rgb_0/vid_pVDE",
-          "vp_0/de_in"
+          "rgb2vga_0/rgb_pVDE"
         ]
       },
       "dvi2rgb_0_vid_pVSync": {
         "ports": [
           "dvi2rgb_0/vid_pVSync",
-          "vp_0/v_sync_in"
+          "rgb2vga_0/rgb_pVSync"
         ]
       },
       "rgb2vga_0_vga_pBlue": {
@@ -395,29 +341,6 @@
         "ports": [
           "sys_clock",
           "clk_wiz_0/clk_in1"
-        ]
-      },
-      "vp_0_de_out": {
-        "ports": [
-          "vp_0/de_out",
-          "rgb2vga_0/rgb_pVDE"
-        ]
-      },
-      "vp_0_h_sync_out": {
-        "ports": [
-          "vp_0/h_sync_out",
-          "rgb2vga_0/rgb_pHSync"
-        ]
-      },
-      "vp_0_pixel_out": {
-        "ports": [
-          "vp_0/pixel_out",
-          "rgb2vga_0/rgb_pData"
-        ]
-      },
-      "vp_0_v_synv_out": {
-        "ports": [
-          "rgb2vga_0/rgb_pVSync"
         ]
       },
       "xlconstant_0_dout": {

@@ -3,18 +3,6 @@
 
 # XDC: imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
 
-# IP: ip/LUT_1/LUT.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LUT || ORIG_REF_NAME==LUT} -quiet] -quiet
-
-# IP: ip/rgb2ycbcr_0_4/rgb2ycbcr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==rgb2ycbcr_0 || ORIG_REF_NAME==rgb2ycbcr_0} -quiet] -quiet
-
-# IP: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/Adder/Adder.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Adder || ORIG_REF_NAME==Adder} -quiet] -quiet
-
-# IP: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/Multiplier/Multiplier.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Multiplier || ORIG_REF_NAME==Multiplier} -quiet] -quiet
-
 # Block Designs: bd/hdmi_vga/hdmi_vga.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga || ORIG_REF_NAME==hdmi_vga} -quiet] -quiet
 
@@ -32,24 +20,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga_xl
 
 # IP: bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/hdmi_vga_xlconstant_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconstant_0_1 || ORIG_REF_NAME==hdmi_vga_xlconstant_0_1} -quiet] -quiet
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_vga_vp_0_0 || ORIG_REF_NAME==hdmi_vga_vp_0_0} -quiet] -quiet
-
-# IP: ip/LUT_1/LUT.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LUT || ORIG_REF_NAME==LUT} -quiet] -quiet
-
-# IP: ip/rgb2ycbcr_0_4/rgb2ycbcr_0.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==rgb2ycbcr_0 || ORIG_REF_NAME==rgb2ycbcr_0} -quiet] -quiet
-
-# IP: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/Adder/Adder.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Adder || ORIG_REF_NAME==Adder} -quiet] -quiet
-
-# IP: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/Multiplier/Multiplier.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Multiplier || ORIG_REF_NAME==Multiplier} -quiet] -quiet
-
-# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/LUT_1/LUT_ooc.xdc
-
-# XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/LUT_1/LUT_ooc.xdc
 
 # XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc
