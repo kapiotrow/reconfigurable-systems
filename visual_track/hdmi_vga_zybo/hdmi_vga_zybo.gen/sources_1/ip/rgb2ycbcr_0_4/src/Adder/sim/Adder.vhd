@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:c_addsub:12.0
--- IP Revision: 16
+-- IP Revision: 17
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY c_addsub_v12_0_16;
-USE c_addsub_v12_0_16.c_addsub_v12_0_16;
+LIBRARY c_addsub_v12_0_17;
+USE c_addsub_v12_0_17.c_addsub_v12_0_17;
 
 ENTITY Adder IS
   PORT (
@@ -68,7 +68,7 @@ END Adder;
 ARCHITECTURE Adder_arch OF Adder IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF Adder_arch: ARCHITECTURE IS "yes";
-  COMPONENT c_addsub_v12_0_16 IS
+  COMPONENT c_addsub_v12_0_17 IS
     GENERIC (
       C_VERBOSITY : INTEGER;
       C_XDEVICEFAMILY : STRING;
@@ -111,7 +111,7 @@ ARCHITECTURE Adder_arch OF Adder IS
       C_OUT : OUT STD_LOGIC;
       S : OUT STD_LOGIC_VECTOR(8 DOWNTO 0)
     );
-  END COMPONENT c_addsub_v12_0_16;
+  END COMPONENT c_addsub_v12_0_17;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF A: SIGNAL IS "XIL_INTERFACENAME a_intf, LAYERED_METADATA undef";
@@ -123,7 +123,7 @@ ARCHITECTURE Adder_arch OF Adder IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF S: SIGNAL IS "XIL_INTERFACENAME s_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF S: SIGNAL IS "xilinx.com:signal:data:1.0 s_intf DATA";
 BEGIN
-  U0 : c_addsub_v12_0_16
+  U0 : c_addsub_v12_0_17
     GENERIC MAP (
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "zynq",

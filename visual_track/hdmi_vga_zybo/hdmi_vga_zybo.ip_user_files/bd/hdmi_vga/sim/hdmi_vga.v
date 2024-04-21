@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Mon Apr 15 10:45:10 2024
+//Date        : Mon Apr 15 11:06:21 2024
 //Host        : WINDELL-P5S529P running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
+(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
 module hdmi_vga
    (hdmi_hpd,
     hdmi_in_clk_n,
@@ -44,7 +44,7 @@ module hdmi_vga
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_T" *) output hdmi_in_ddc_sda_t;
   output [0:0]hdmi_out_en;
   input [2:0]sw;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN hdmi_vga_sys_clock, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN hdmi_vga_sys_clk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;
   output [4:0]vga_pBlue;
   output [5:0]vga_pGreen;
   output vga_pHSync;
@@ -72,7 +72,12 @@ module hdmi_vga
   wire rgb2vga_0_vga_pHSync;
   wire [4:0]rgb2vga_0_vga_pRed;
   wire rgb2vga_0_vga_pVSync;
+  wire [2:0]sw_1;
   wire sys_clock_1;
+  wire vp_0_de_out;
+  wire vp_0_h_sync_out;
+  wire [23:0]vp_0_pixel_out;
+  wire vp_0_v_sync_out;
   wire [0:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
 
@@ -88,6 +93,7 @@ module hdmi_vga
   assign hdmi_in_ddc_sda_o = dvi2rgb_0_DDC_SDA_O;
   assign hdmi_in_ddc_sda_t = dvi2rgb_0_DDC_SDA_T;
   assign hdmi_out_en[0] = xlconstant_1_dout;
+  assign sw_1 = sw[2:0];
   assign sys_clock_1 = sys_clock;
   assign vga_pBlue[4:0] = rgb2vga_0_vga_pBlue;
   assign vga_pGreen[5:0] = rgb2vga_0_vga_pGreen;
@@ -118,17 +124,28 @@ module hdmi_vga
         .vid_pVSync(dvi2rgb_0_vid_pVSync));
   hdmi_vga_rgb2vga_0_0 rgb2vga_0
        (.PixelClk(dvi2rgb_0_PixelClk),
-        .rgb_pData(dvi2rgb_0_vid_pData),
-        .rgb_pHSync(dvi2rgb_0_vid_pHSync),
-        .rgb_pVDE(dvi2rgb_0_vid_pVDE),
-        .rgb_pVSync(dvi2rgb_0_vid_pVSync),
+        .rgb_pData(vp_0_pixel_out),
+        .rgb_pHSync(vp_0_h_sync_out),
+        .rgb_pVDE(vp_0_de_out),
+        .rgb_pVSync(vp_0_v_sync_out),
         .vga_pBlue(rgb2vga_0_vga_pBlue),
         .vga_pGreen(rgb2vga_0_vga_pGreen),
         .vga_pHSync(rgb2vga_0_vga_pHSync),
         .vga_pRed(rgb2vga_0_vga_pRed),
         .vga_pVSync(rgb2vga_0_vga_pVSync));
+  hdmi_vga_vp_0_0 vp_0
+       (.clk(dvi2rgb_0_PixelClk),
+        .de_in(dvi2rgb_0_vid_pVDE),
+        .de_out(vp_0_de_out),
+        .h_sync_in(dvi2rgb_0_vid_pHSync),
+        .h_sync_out(vp_0_h_sync_out),
+        .pixel_in(dvi2rgb_0_vid_pData),
+        .pixel_out(vp_0_pixel_out),
+        .sw(sw_1),
+        .v_sync_in(dvi2rgb_0_vid_pVSync),
+        .v_sync_out(vp_0_v_sync_out));
   hdmi_vga_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
-  hdmi_vga_xlconstant_0_1 xlconstant_1
+  hdmi_vga_xlconstant_1_0 xlconstant_1
        (.dout(xlconstant_1_dout));
 endmodule

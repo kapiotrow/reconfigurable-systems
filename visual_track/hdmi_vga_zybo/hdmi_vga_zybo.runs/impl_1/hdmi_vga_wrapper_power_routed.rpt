@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon Apr 15 10:47:38 2024
+| Date             : Mon Apr 15 11:09:08 2024
 | Host             : WINDELL-P5S529P running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_vga_wrapper_power_routed.rpt -pb hdmi_vga_wrapper_power_summary_routed.pb -rpx hdmi_vga_wrapper_power_routed.rpx
 | Design           : hdmi_vga_wrapper
@@ -52,22 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.036 |        9 |       --- |             --- |
-| Slice Logic              |     0.006 |     9885 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     2968 |     17600 |           16.86 |
-|   Register               |    <0.001 |     4889 |     35200 |           13.89 |
-|   CARRY4                 |    <0.001 |      116 |      4400 |            2.64 |
+| Clocks                   |     0.035 |        9 |       --- |             --- |
+| Slice Logic              |     0.006 |    10251 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     3060 |     17600 |           17.39 |
+|   Register               |    <0.001 |     5028 |     35200 |           14.28 |
+|   CARRY4                 |    <0.001 |      134 |      4400 |            3.05 |
 |   LUT as Distributed RAM |    <0.001 |       48 |      6000 |            0.80 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   F7/F8 Muxes            |    <0.001 |       63 |     17600 |            0.36 |
-|   Others                 |    <0.001 |      678 |       --- |             --- |
-|   LUT as Shift Register  |    <0.001 |      296 |      6000 |            4.93 |
+|   Others                 |    <0.001 |      793 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |      299 |      6000 |            4.98 |
 |   BUFR                   |     0.000 |        1 |        56 |            1.79 |
-| Signals                  |     0.008 |     7012 |       --- |             --- |
+| Signals                  |     0.008 |     7254 |       --- |             --- |
 | Block RAM                |     0.001 |      2.5 |        60 |            4.17 |
 | MMCM                     |     0.062 |        1 |         2 |           50.00 |
 | PLL                      |     0.110 |        1 |         2 |           50.00 |
-| I/O                      |     0.032 |       31 |       100 |           31.00 |
+| DSPs                     |     0.000 |        9 |        80 |           11.25 |
+| I/O                      |     0.032 |       34 |       100 |           34.00 |
 | Static Power             |     0.093 |          |           |                 |
 | Total                    |     0.347 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+

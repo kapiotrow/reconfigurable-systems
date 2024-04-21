@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Apr 15 10:46:15 2024
-# Process ID: 17880
-# Current directory: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1
+# Start of session at: Mon Apr 15 11:07:50 2024
+# Process ID: 21336
+# Current directory: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.runs/impl_1
 # Command line: vivado.exe -log hdmi_vga_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_vga_wrapper.tcl -notrace
-# Log file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1/hdmi_vga_wrapper.vdi
-# Journal file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1\vivado.jou
+# Log file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.runs/impl_1/hdmi_vga_wrapper.vdi
+# Journal file: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.runs/impl_1\vivado.jou
 # Running On: WINDELL-P5S529P, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34029 MB
 #-----------------------------------------------------------
 source hdmi_vga_wrapper.tcl -notrace

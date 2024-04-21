@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:mult_gen:12.0
--- IP Revision: 19
+-- IP Revision: 20
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY mult_gen_v12_0_19;
-USE mult_gen_v12_0_19.mult_gen_v12_0_19;
+LIBRARY mult_gen_v12_0_20;
+USE mult_gen_v12_0_20.mult_gen_v12_0_20;
 
 ENTITY Multiplier IS
   PORT (
@@ -68,7 +68,7 @@ END Multiplier;
 ARCHITECTURE Multiplier_arch OF Multiplier IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF Multiplier_arch: ARCHITECTURE IS "yes";
-  COMPONENT mult_gen_v12_0_19 IS
+  COMPONENT mult_gen_v12_0_20 IS
     GENERIC (
       C_VERBOSITY : INTEGER;
       C_MODEL_TYPE : INTEGER;
@@ -99,7 +99,7 @@ ARCHITECTURE Multiplier_arch OF Multiplier IS
       SCLR : IN STD_LOGIC;
       P : OUT STD_LOGIC_VECTOR(35 DOWNTO 0)
     );
-  END COMPONENT mult_gen_v12_0_19;
+  END COMPONENT mult_gen_v12_0_20;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF A: SIGNAL IS "XIL_INTERFACENAME a_intf, LAYERED_METADATA undef";
@@ -111,7 +111,7 @@ ARCHITECTURE Multiplier_arch OF Multiplier IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF P: SIGNAL IS "XIL_INTERFACENAME p_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF P: SIGNAL IS "xilinx.com:signal:data:1.0 p_intf DATA";
 BEGIN
-  U0 : mult_gen_v12_0_19
+  U0 : mult_gen_v12_0_20
     GENERIC MAP (
       C_VERBOSITY => 0,
       C_MODEL_TYPE => 0,

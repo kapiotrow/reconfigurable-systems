@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1/hdmi_vga_wrapper.tcl"
+  variable script "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.runs/impl_1/hdmi_vga_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -138,25 +138,27 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.cache/wt [current_project]
-  set_property parent.project_path C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.cache/wt [current_project]
+  set_property parent.project_path C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.xpr [current_project]
   set_property ip_repo_paths {
   C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/vivado-library
   C:/Users/User/AppData/Roaming/Xilinx/ip_repo
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip [current_project]
+  set_property ip_output_repo C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp
+  add_files -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.runs/synth_1/hdmi_vga_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.srcs/sources_1/ip/LUT_1/LUT.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.srcs/sources_1/ip/rgb2ycbcr_0_4/rgb2ycbcr_0.xci
+  add_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
+  read_xdc C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/test/test.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

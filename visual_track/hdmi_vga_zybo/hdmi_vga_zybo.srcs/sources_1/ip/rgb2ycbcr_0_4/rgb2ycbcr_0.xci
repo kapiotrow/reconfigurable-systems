@@ -29,7 +29,7 @@
         "OUTPUTDIR": [ { "value": "../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
-        "SWVERSION": [ { "value": "2023.2" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

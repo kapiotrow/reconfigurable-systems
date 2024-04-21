@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:user:rgb2ycbcr:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "rgb2ycbcr,Vivado 2023.2" *)
+(* X_CORE_INFO = "rgb2ycbcr,Vivado 2023.2.2" *)
 (* CHECK_LICENSE_TYPE = "rgb2ycbcr_0,rgb2ycbcr,{}" *)
-(* CORE_GENERATION_INFO = "rgb2ycbcr_0,rgb2ycbcr,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=rgb2ycbcr,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "rgb2ycbcr_0,rgb2ycbcr,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=rgb2ycbcr,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module rgb2ycbcr_0 (
