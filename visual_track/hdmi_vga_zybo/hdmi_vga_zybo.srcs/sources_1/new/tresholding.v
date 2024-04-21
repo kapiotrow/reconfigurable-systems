@@ -31,15 +31,17 @@ module tresholding(
     output [23:0] pixel_out
 );
 
-localparam Ta = 0;
-localparam Tb = 255;
-localparam Tc = 0;
-localparam Td = 255;
+localparam Ta = 50;
+localparam Tb = 180;
+localparam Tc = 50;
+localparam Td = 175;
     
-wire [8:0] bin;
+wire [7:0] bin;
+wire [7:0] Cb;
+wire [7:0] Cr;
 
 assign Cb = pixel_in[15:8];
-assign Cr = pixel_in[7:0];
+assign Cr = pixel_in[23:16];
 assign bin = (Cb > Ta && Cb < Tb && Cr > Tc && Cr < Td ) ? 8'd255 : 0;
 assign pixel_out = {bin, bin, bin};
 assign de_out = de_in;

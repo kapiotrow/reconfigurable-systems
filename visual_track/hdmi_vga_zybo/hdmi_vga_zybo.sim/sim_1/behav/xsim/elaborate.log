@@ -6,4 +6,55 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_12.xbip_utils_v3_0_12_pkg
+Compiling package mult_gen_v12_0_20.mult_gen_v12_0_20_viv_comp
+Compiling package mult_gen_v12_0_20.mult_gen_v12_0_20_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_20.dsp_pkg
+Compiling package c_addsub_v12_0_17.c_addsub_v12_0_17_viv_comp
+Compiling package xbip_pipe_v3_0_8.xbip_pipe_v3_0_8_viv_comp
+Compiling package xbip_addsub_v3_0_8.xbip_addsub_v3_0_8_viv_comp
+Compiling package c_addsub_v12_0_17.c_addsub_v12_0_17_pkg
+Compiling package c_addsub_v12_0_17.c_addsub_v12_0_17_pkg_legacy
+Compiling package c_reg_fd_v12_0_8.c_reg_fd_v12_0_8_viv_comp
+Compiling module xil_defaultlib.hdmi_in
+Compiling architecture xilinx of entity mult_gen_v12_0_20.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_20.op_resize [\op_resize(ai_width=18,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_20.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_20.mult_gen_v12_0_20_viv [\mult_gen_v12_0_20_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_20.mult_gen_v12_0_20 [\mult_gen_v12_0_20(c_xdevicefami...]
+Compiling architecture multiplier_arch of entity xil_defaultlib.Multiplier [multiplier_default]
+Compiling module xil_defaultlib.register(N=9)
+Compiling module xil_defaultlib.delay_line(N=9,DELAY=1)
+Compiling architecture structural of entity c_reg_fd_v12_0_8.c_reg_fd_v12_0_8_viv [\c_reg_fd_v12_0_8_viv(c_width=9,...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_17.c_addsub_v12_0_17_lut6_legacy [\c_addsub_v12_0_17_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_17.c_addsub_v12_0_17_fabric_legacy [\c_addsub_v12_0_17_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_17.c_addsub_v12_0_17_legacy [\c_addsub_v12_0_17_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_17.c_addsub_v12_0_17_viv [\c_addsub_v12_0_17_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_17.c_addsub_v12_0_17 [\c_addsub_v12_0_17(c_xdevicefami...]
+Compiling architecture adder_arch of entity xil_defaultlib.Adder [adder_default]
+Compiling module xil_defaultlib.register(N=1)
+Compiling module xil_defaultlib.delay_line(N=1,DELAY=6)
+Compiling module xil_defaultlib.rgb2ycbcr_default
+Compiling module xil_defaultlib.rgb2ycbcr_0
+Compiling module xil_defaultlib.tresholding
+Compiling module xil_defaultlib.register(N=3)
+Compiling module xil_defaultlib.delay_line(N=3,DELAY=1)
+Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="z...
+Compiling module xil_defaultlib.LUT
+Compiling module xil_defaultlib.vp
+Compiling module xil_defaultlib.hdmi_out
+Compiling module xil_defaultlib.tb_hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_hdmi_behav

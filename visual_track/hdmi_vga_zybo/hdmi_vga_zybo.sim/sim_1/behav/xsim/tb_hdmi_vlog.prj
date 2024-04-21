@@ -1,17 +1,17 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../treshold_YCbCr.gen/sources_1/bd/hdmi_vga/ipshared/c2c6" \
-"../../../../test.gen/sources_1/ip/LUT_1/sim/LUT.v" \
-"../../../../test.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v" \
-"../../../../test.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v" \
-"../../../../test.gen/sources_1/ip/rgb2ycbcr_0_4/src/rgb2ycbcr.v" \
-"../../../../test.gen/sources_1/ip/rgb2ycbcr_0_4/sim/rgb2ycbcr_0.v" \
-"../../../../test.srcs/sources_1/imports/new/delay_line.v" \
-"../../../../test.srcs/sim_1/imports/tb_src/hdmi_in.v" \
-"../../../../test.srcs/sim_1/imports/tb_src/hdmi_out.v" \
-"../../../../test.srcs/sources_1/imports/new/register.v" \
-"../../../../test.srcs/sources_1/new/tresholding.v" \
-"../../../../test.srcs/sources_1/new/vp.v" \
-"../../../../test.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+verilog xil_defaultlib  --include "../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ipshared/c2c6" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/LUT_1/sim/LUT.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/rgb2ycbcr.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/sim/rgb2ycbcr_0.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/imports/new/delay_line.v" \
+"../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/imports/new/register.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/tresholding.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/vp.v" \
+"../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
