@@ -4,7 +4,7 @@
     "xci_name": "hdmi_vga_vp_0_0",
     "cell_name": "vp_0",
     "component_reference": "xilinx.com:module_ref:vp:1.0",
-    "ip_revision": "1713700837",
+    "ip_revision": "1716195460",
     "gen_directory": "../../../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0",
     "parameters": {
       "component_parameters": {
@@ -27,7 +27,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "1713700837" } ],
+        "IPREVISION": [ { "value": "1716195460" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

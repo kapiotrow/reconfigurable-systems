@@ -1,0 +1,17 @@
+vhdl xbip_utils_v3_0_12  \
+"../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_8  \
+"../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_bram18k_v3_0_8  \
+"../../../ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_20  \
+"../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../wip.gen/sources_1/ip/mul_11_11/sim/mul_11_11.vhd" \
+
+# Do not sort compile order
+nosort

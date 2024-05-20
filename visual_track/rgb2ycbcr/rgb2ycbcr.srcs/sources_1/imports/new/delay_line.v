@@ -27,6 +27,8 @@ module delay_line
 )
 (
     input clk,
+    input rst,
+    input ce,
     input [N-1:0] idata,
     output [N-1:0] odata
 );
@@ -44,6 +46,8 @@ generate
         r_i
         (
             .clk(clk),
+            .rst(rst),
+            .ce(ce),
             .d(tdata[i]),
             .q(tdata[i+1])
         );

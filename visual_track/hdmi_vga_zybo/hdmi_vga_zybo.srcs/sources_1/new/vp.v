@@ -32,7 +32,12 @@ module vp(
     output v_sync_out,
     output [23:0] pixel_out
     );
-    
+
+
+//frame size
+localparam W = 640;
+localparam H = 480;
+
 //ycbcr wires
 wire [23:0] pix_ycbcr;
 wire h_sync_ycbcr;
@@ -52,6 +57,41 @@ wire [23:0] pix_tr;
 wire de_tr;
 wire h_sync_tr;
 wire v_sync_tr;
+//center of mass wires
+wire [23:0] pix_c;
+wire de_c;
+wire hsync_c;
+wire vsync_c;
+//bounding box wires
+wire [23:0] pix_b;
+wire de_b;
+wire hsync_b;
+wire vsync_b;
+//circle wires
+wire [23:0] pix_circ;
+wire de_circ;
+wire hsync_circ;
+wire vsync_circ;
+//median filter wires
+wire [23:0] pix_med;
+wire de_med;
+wire hsync_med;
+wire vsync_med;
+//dilation wires
+wire [23:0] pix_dil;
+wire de_dil;
+wire hsync_dil;
+wire vsync_dil;
+//erosion wires
+wire [23:0] pix_ero;
+wire de_ero;
+wire hsync_ero;
+wire vsync_ero;
+//mean filter wires
+wire [23:0] pix_mean;
+wire de_mean;
+wire hsync_mean;
+wire vsync_mean;
 
 
 //---------------RGB-to-YCbCr-conversion----------------   
@@ -65,6 +105,22 @@ rgb2ycbcr_0 convert(
     .v_sync_out(v_sync_ycbcr),
     .de_out(de_ycbcr),
     .pixel_ycbcr(pix_ycbcr)
+);
+
+
+//--------------mean-filter-work_in_progress------------
+mean3x3 #(
+    .H_SIZE(660)
+) mean (
+    .clk(clk),
+    .pixel_in(pix_ycbcr),
+    .de_in(de_tr),
+    .hsync_in(h_sync_ycbcr),
+    .vsync_in(v_sync_ycbcr),
+    .pixel_out(pix_mean),
+    .de_out(de_mean),
+    .hsync_out(hsync_mean),
+    .vsync_out(vsync_mean)
 );
 
 //--------------tresholding-YCbCr-----------------------
@@ -83,6 +139,8 @@ tresholding tr(
 //delay sync signals
 delay_line #(.N(3), .DELAY(1)) dl (
     .clk(clk),
+    .rst(~de_in),
+    .ce(de_in),
     .idata({h_sync_in, v_sync_in, de_in}),
     .odata({h_sync_del, v_sync_del, de_del})
 );
@@ -106,8 +164,110 @@ LUT lut3 (
     .qspo(pix3)
 );
 
+assign pix_and = pix1 & pix2 & pix3;
+assign pix_lut = {pix_and, pix_and, pix_and};
 
-//-----------------choosing-output--------------
+
+//----------------centre-of-mass-----------------
+vis_centroid #(
+    .IMG_H(H),
+    .IMG_W(W)
+) vis_centre (
+    .clk(clk),
+    .de(de_med),
+    .hsync(hsync_ero),
+    .vsync(vsync_ero),
+    .pixel_in(pix_ero),
+    .de_out(de_c),
+    .hsync_out(hsync_c),
+    .vsync_out(vsync_c),
+    .pixel_out(pix_c)
+);
+
+
+//----------------bounding-box-------------------
+vis_box #(
+    .IMG_H(H),
+    .IMG_W(W)
+) vis_b (
+    .clk(clk),
+    .de(de_med),
+    .hsync(hsync_ero),
+    .vsync(vsync_ero),
+    .pixel_in(pix_ero),
+    .de_out(de_b),
+    .hsync_out(hsync_b),
+    .vsync_out(vsync_b),
+    .pixel_out(pix_b)
+);
+
+
+//----------------centre-of-mass-circle----------
+vis_centroid_circle #(
+    .IMG_H(H),
+    .IMG_W(W),
+    .R_SQR(25)
+) vis_circ (
+    .clk(clk),
+    .de(de_med),
+    .hsync(hsync_ero),
+    .vsync(vsync_ero),
+    .pixel_in(pix_ero),
+    .de_out(de_circ),
+    .hsync_out(hsync_circ),
+    .vsync_out(vsync_circ),
+    .pixel_out(pix_circ)
+);
+
+
+//----------------median-filter------------------
+median5x5 #(
+    .H_SIZE(1650)
+) median (
+    .clk(clk),
+    .mask(pix_tr[23]),
+    .de_in(de_tr),
+    .hsync_in(h_sync_tr),
+    .vsync_in(v_sync_tr),
+    .pixel_out(pix_med),
+    .de_out(de_med),
+    .hsync_out(hsync_med),
+    .vsync_out(vsync_med)
+);
+
+
+//----------------dilation----------------------
+dilation #(
+    .H_SIZE(1650)
+) dil (
+    .clk(clk),
+    .mask(pix_tr[23]),
+    .de_in(de_med),
+    .hsync_in(hsync_med),
+    .vsync_in(vsync_med),
+    .pixel_out(pix_dil),
+    .de_out(de_dil),
+    .hsync_out(hsync_dil),
+    .vsync_out(vsync_dil)
+);
+
+//----------------erosion----------------------
+erosion5x5 #(
+    .H_SIZE(1650)
+) erosion (
+    .clk(clk),
+    .mask(pix_dil[23]),
+    .de_in(de_dil),
+    .hsync_in(hsync_dil),
+    .vsync_in(vsync_dil),
+    .pixel_out(pix_ero),
+    .de_out(de_ero),
+    .hsync_out(hsync_ero),
+    .vsync_out(vsync_ero)
+);
+
+
+//----------------choosing-output----------------
 mux choose_out (
     .clk(clk),
     .sw(sw),
@@ -115,15 +275,12 @@ mux choose_out (
     .idata1({de_del, h_sync_del, v_sync_del, pix_lut}),
     .idata2({de_ycbcr, h_sync_ycbcr, v_sync_ycbcr, pix_ycbcr}),
     .idata3({de_tr, h_sync_tr, v_sync_tr, pix_tr}),
-    .idata4(0),
-    .idata5(0),
-    .idata6(0),
-    .idata7(0),
+    .idata4({de_c, hsync_c, vsync_c, pix_c}),
+    .idata5({de_b, hsync_b, vsync_b, pix_b}),
+    .idata6({de_circ, hsync_circ, vsync_circ, pix_circ}),
+    .idata7({de_mean, hsync_mean, vsync_mean, pix_mean}),
     .odata({de_out, h_sync_out, v_sync_out, pixel_out})
 );
-
-assign pix_and = pix1 & pix2 & pix3;
-assign pix_lut = {pix_and, pix_and, pix_and};
 
 
 endmodule

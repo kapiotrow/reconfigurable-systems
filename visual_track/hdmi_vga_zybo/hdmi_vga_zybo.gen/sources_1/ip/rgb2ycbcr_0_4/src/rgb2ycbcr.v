@@ -73,6 +73,8 @@ generate
     begin: delays
         delay_line #(.N(9), .DELAY(1)) dl(
             .clk(clk),
+            .rst(1'b0),
+            .ce(1'b1),
             .idata(P[i][2][25:17]),
             .odata(P2_del[i])
         );
@@ -121,18 +123,24 @@ endgenerate
 //delay sync signals
 delay_line #(.N(1), .DELAY(6))dl_h(
     .clk(clk),
+    .rst(1'b0),
+    .ce(1'b1),
     .idata(h_sync_in),
     .odata(h_sync_out)
 );
 
 delay_line #(.N(1), .DELAY(6))dl_v(
     .clk(clk),
+    .rst(1'b0),
+    .ce(1'b1),
     .idata(v_sync_in),
     .odata(v_sync_out)
 );
 
 delay_line #(.N(1), .DELAY(6))dl_de(
     .clk(clk),
+    .rst(1'b0),
+    .ce(1'b1),
     .idata(de_in),
     .odata(de_out)
 );

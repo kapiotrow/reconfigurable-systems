@@ -26,15 +26,19 @@ module register
 )
 (
     input clk,
-    input [N-1:0] d,
-    input [N-1:0] q
+    input rst,
+    input ce,
+    input signed [N-1:0] d,    
+    output signed [N-1:0] q
 );
 
 reg [N-1:-0] val = 0;
 
 always @(posedge clk) 
 begin
-    val <= d;
+    if(rst) val <= 0;
+    else if(ce)
+        val <= d;
 end
 
 assign q = val;

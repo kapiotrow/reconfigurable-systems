@@ -31,10 +31,11 @@ module tresholding(
     output [23:0] pixel_out
 );
 
-localparam Ta = 50;
+//tresholds
+localparam Ta = 100;
 localparam Tb = 180;
-localparam Tc = 50;
-localparam Td = 175;
+localparam Tc = 100;
+localparam Td = 230;
     
 wire [7:0] bin;
 wire [7:0] Cb;

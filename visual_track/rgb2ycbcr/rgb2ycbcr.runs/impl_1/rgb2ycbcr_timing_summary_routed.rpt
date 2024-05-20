@@ -1,0 +1,608 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Sun Apr 28 21:05:57 2024
+| Host         : WINDELL-P5S529P running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file rgb2ycbcr_timing_summary_routed.rpt -pb rgb2ycbcr_timing_summary_routed.pb -rpx rgb2ycbcr_timing_summary_routed.rpx -warn_on_violation
+| Design       : rgb2ycbcr
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  114         
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (114)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (177)
+5. checking no_input_delay (27)
+6. checking no_output_delay (27)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (114)
+--------------------------
+ There are 114 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (177)
+--------------------------------------------------
+ There are 177 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (27)
+-------------------------------
+ There are 27 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (27)
+--------------------------------
+ There are 27 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  204          inf        0.000                      0                  204           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           204 Endpoints
+Min Delay           204 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.283ns  (logic 3.091ns (49.191%)  route 3.193ns (50.809%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y39         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+    SLICE_X33Y39         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/Q
+                         net (fo=1, routed)           3.193     3.649    pixel_ycbcr_OBUF[0]
+    P18                  OBUF (Prop_obuf_I_O)         2.635     6.283 r  pixel_ycbcr_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     6.283    pixel_ycbcr[0]
+    P18                                                               r  pixel_ycbcr[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.242ns  (logic 3.075ns (49.263%)  route 3.167ns (50.737%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y39         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+    SLICE_X33Y39         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/Q
+                         net (fo=1, routed)           3.167     3.623    pixel_ycbcr_OBUF[2]
+    W19                  OBUF (Prop_obuf_I_O)         2.619     6.242 r  pixel_ycbcr_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     6.242    pixel_ycbcr[2]
+    W19                                                               r  pixel_ycbcr[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.237ns  (logic 3.077ns (49.329%)  route 3.160ns (50.671%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y39         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C
+    SLICE_X33Y39         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/Q
+                         net (fo=1, routed)           3.160     3.616    pixel_ycbcr_OBUF[3]
+    W18                  OBUF (Prop_obuf_I_O)         2.621     6.237 r  pixel_ycbcr_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     6.237    pixel_ycbcr[3]
+    W18                                                               r  pixel_ycbcr[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.228ns  (logic 3.076ns (49.391%)  route 3.152ns (50.609%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y40         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C
+    SLICE_X33Y40         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/Q
+                         net (fo=1, routed)           3.152     3.608    pixel_ycbcr_OBUF[4]
+    V18                  OBUF (Prop_obuf_I_O)         2.620     6.228 r  pixel_ycbcr_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     6.228    pixel_ycbcr[4]
+    V18                                                               r  pixel_ycbcr[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.207ns  (logic 3.063ns (49.340%)  route 3.145ns (50.660%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y40         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C
+    SLICE_X33Y40         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/Q
+                         net (fo=1, routed)           3.145     3.601    pixel_ycbcr_OBUF[6]
+    R18                  OBUF (Prop_obuf_I_O)         2.607     6.207 r  pixel_ycbcr_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     6.207    pixel_ycbcr[6]
+    R18                                                               r  pixel_ycbcr[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.144ns  (logic 3.099ns (50.443%)  route 3.045ns (49.557%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y39         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C
+    SLICE_X33Y39         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/Q
+                         net (fo=1, routed)           3.045     3.501    pixel_ycbcr_OBUF[1]
+    N17                  OBUF (Prop_obuf_I_O)         2.643     6.144 r  pixel_ycbcr_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     6.144    pixel_ycbcr[1]
+    N17                                                               r  pixel_ycbcr[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.088ns  (logic 3.080ns (50.582%)  route 3.009ns (49.418%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y40         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C
+    SLICE_X33Y40         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/Q
+                         net (fo=1, routed)           3.009     3.465    pixel_ycbcr_OBUF[5]
+    V17                  OBUF (Prop_obuf_I_O)         2.624     6.088 r  pixel_ycbcr_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     6.088    pixel_ycbcr[5]
+    V17                                                               r  pixel_ycbcr[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.043ns  (logic 3.061ns (50.663%)  route 2.981ns (49.337%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y40         FDRE                         0.000     0.000 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C
+    SLICE_X33Y40         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/Q
+                         net (fo=1, routed)           2.981     3.437    pixel_ycbcr_OBUF[7]
+    T17                  OBUF (Prop_obuf_I_O)         2.605     6.043 r  pixel_ycbcr_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     6.043    pixel_ycbcr[7]
+    T17                                                               r  pixel_ycbcr[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[0].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[16]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.865ns  (logic 3.082ns (52.557%)  route 2.783ns (47.443%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y43         FDRE                         0.000     0.000 r  addersVec[0].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+    SLICE_X33Y43         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[0].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/Q
+                         net (fo=1, routed)           2.783     3.239    pixel_ycbcr_OBUF[16]
+    U20                  OBUF (Prop_obuf_I_O)         2.626     5.865 r  pixel_ycbcr_OBUF[16]_inst/O
+                         net (fo=0)                   0.000     5.865    pixel_ycbcr[16]
+    U20                                                               r  pixel_ycbcr[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 addersVec[0].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            pixel_ycbcr[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.855ns  (logic 3.098ns (52.910%)  route 2.757ns (47.090%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y43         FDRE                         0.000     0.000 r  addersVec[0].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+    SLICE_X33Y43         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  addersVec[0].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/Q
+                         net (fo=1, routed)           2.757     3.213    pixel_ycbcr_OBUF[18]
+    P20                  OBUF (Prop_obuf_I_O)         2.642     5.855 r  pixel_ycbcr_OBUF[18]_inst/O
+                         net (fo=0)                   0.000     5.855    pixel_ycbcr[18]
+    P20                                                               r  pixel_ycbcr[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 dl_de/genblk1[0].r_i/val_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dl_de/genblk1[4].r_i/val_reg[0]_srl4/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y9          FDRE                         0.000     0.000 r  dl_de/genblk1[0].r_i/val_reg[0]/C
+    SLICE_X43Y9          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  dl_de/genblk1[0].r_i/val_reg[0]/Q
+                         net (fo=1, routed)           0.056     0.197    dl_de/genblk1[4].r_i/val_reg[0]_0
+    SLICE_X42Y9          SRL16E                                       r  dl_de/genblk1[4].r_i/val_reg[0]_srl4/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dl_h/genblk1[0].r_i/val_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dl_h/genblk1[4].r_i/val_reg[0]_srl4/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.828%)  route 0.116ns (45.172%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y9          FDRE                         0.000     0.000 r  dl_h/genblk1[0].r_i/val_reg[0]/C
+    SLICE_X43Y9          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  dl_h/genblk1[0].r_i/val_reg[0]/Q
+                         net (fo=1, routed)           0.116     0.257    dl_h/genblk1[4].r_i/val_reg[0]_0
+    SLICE_X42Y9          SRL16E                                       r  dl_h/genblk1[4].r_i/val_reg[0]_srl4/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[2].dl/genblk1[0].r_i/val_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.290ns  (logic 0.126ns (43.387%)  route 0.164ns (56.613%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y16          DSP48E1                      0.000     0.000 r  genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y16          DSP48E1 (Prop_dsp48e1_CLK_P[19])
+                                                      0.126     0.126 r  genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[19]
+                         net (fo=1, routed)           0.164     0.290    delays[2].dl/genblk1[0].r_i/P[2]
+    SLICE_X33Y43         FDRE                                         r  delays[2].dl/genblk1[0].r_i/val_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[0].dl/genblk1[0].r_i/val_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.292ns  (logic 0.126ns (43.124%)  route 0.166ns (56.876%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y17          DSP48E1                      0.000     0.000 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y17          DSP48E1 (Prop_dsp48e1_CLK_P[18])
+                                                      0.126     0.126 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[18]
+                         net (fo=1, routed)           0.166     0.292    delays[0].dl/genblk1[0].r_i/P[1]
+    SLICE_X32Y44         FDRE                                         r  delays[0].dl/genblk1[0].r_i/val_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[0].dl/genblk1[0].r_i/val_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.293ns  (logic 0.126ns (42.977%)  route 0.167ns (57.023%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y17          DSP48E1                      0.000     0.000 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y17          DSP48E1 (Prop_dsp48e1_CLK_P[24])
+                                                      0.126     0.126 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[24]
+                         net (fo=1, routed)           0.167     0.293    delays[0].dl/genblk1[0].r_i/P[7]
+    SLICE_X33Y42         FDRE                                         r  delays[0].dl/genblk1[0].r_i/val_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[0].dl/genblk1[0].r_i/val_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.344ns  (logic 0.126ns (36.595%)  route 0.218ns (63.405%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y17          DSP48E1                      0.000     0.000 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y17          DSP48E1 (Prop_dsp48e1_CLK_P[23])
+                                                      0.126     0.126 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[23]
+                         net (fo=1, routed)           0.218     0.344    delays[0].dl/genblk1[0].r_i/P[6]
+    SLICE_X33Y40         FDRE                                         r  delays[0].dl/genblk1[0].r_i/val_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[1].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[1].dl/genblk1[0].r_i/val_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.344ns  (logic 0.126ns (36.595%)  route 0.218ns (63.405%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y15          DSP48E1                      0.000     0.000 r  genblk1[1].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y15          DSP48E1 (Prop_dsp48e1_CLK_P[23])
+                                                      0.126     0.126 r  genblk1[1].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[23]
+                         net (fo=1, routed)           0.218     0.344    delays[1].dl/genblk1[0].r_i/P[6]
+    SLICE_X32Y36         FDRE                                         r  delays[1].dl/genblk1[0].r_i/val_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[2].dl/genblk1[0].r_i/val_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.345ns  (logic 0.126ns (36.489%)  route 0.219ns (63.511%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y16          DSP48E1                      0.000     0.000 r  genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y16          DSP48E1 (Prop_dsp48e1_CLK_P[20])
+                                                      0.126     0.126 r  genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[20]
+                         net (fo=1, routed)           0.219     0.345    delays[2].dl/genblk1[0].r_i/P[3]
+    SLICE_X32Y40         FDRE                                         r  delays[2].dl/genblk1[0].r_i/val_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[2].dl/genblk1[0].r_i/val_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.346ns  (logic 0.126ns (36.410%)  route 0.220ns (63.590%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y16          DSP48E1                      0.000     0.000 r  genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y16          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      0.126     0.126 r  genblk1[2].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[17]
+                         net (fo=1, routed)           0.220     0.346    delays[2].dl/genblk1[0].r_i/P[0]
+    SLICE_X32Y43         FDRE                                         r  delays[2].dl/genblk1[0].r_i/val_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            delays[0].dl/genblk1[0].r_i/val_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.346ns  (logic 0.126ns (36.384%)  route 0.220ns (63.616%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y17          DSP48E1                      0.000     0.000 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+    DSP48_X1Y17          DSP48E1 (Prop_dsp48e1_CLK_P[21])
+                                                      0.126     0.126 r  genblk1[0].muls[2].mul/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[21]
+                         net (fo=1, routed)           0.220     0.346    delays[0].dl/genblk1[0].r_i/P[4]
+    SLICE_X32Y40         FDRE                                         r  delays[0].dl/genblk1[0].r_i/val_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
