@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-| Date         : Mon May 20 10:53:41 2024
+| Date         : Fri May 24 22:44:33 2024
 | Host         : WINDELL-P5S529P running 64-bit major release  (build 9200)
 | Command      : report_methodology -file hdmi_vga_wrapper_methodology_drc_routed.rpt -pb hdmi_vga_wrapper_methodology_drc_routed.pb -rpx hdmi_vga_wrapper_methodology_drc_routed.rpx
 | Design       : hdmi_vga_wrapper
@@ -4936,117 +4936,117 @@ Related violations: <none>
 
 TIMING-17#978 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#979 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#980 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#981 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#982 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#983 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#984 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[0]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#985 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[1]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/addersVec[2].add/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#986 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[2]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#987 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[3]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#988 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[4]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#989 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[5]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#990 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[6]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#991 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[7]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#992 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[0]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#993 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[1]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[0].dl/genblk1[0].r_i/val_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#994 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[2]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#995 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[3]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#996 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[4]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#997 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[5]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#998 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[6]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#999 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[7]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#1000 Critical Warning
 Non-clocked sequential cell  
-The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[2].dl/genblk1[0].r_i/val_reg[0]/C is not reached by a timing clock
+The clock pin hdmi_vga_i/vp_0/inst/convert/inst/delays[1].dl/genblk1[0].r_i/val_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 CKBF-1#1 Warning
@@ -5120,7 +5120,7 @@ Related violations: <none>
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ */*SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '111' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc (Line: 13)
+Current XDC: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc (Line: 13)
 Related violations: <none>
 
 

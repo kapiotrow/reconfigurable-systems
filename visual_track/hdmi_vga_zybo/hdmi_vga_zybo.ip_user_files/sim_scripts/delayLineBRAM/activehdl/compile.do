@@ -23,7 +23,7 @@ vlog -work blk_mem_gen_v8_4_7  -v2k5 -l xpm -l blk_mem_gen_v8_4_7 -l xil_default
 "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib  -v2k5 -l xpm -l blk_mem_gen_v8_4_7 -l xil_defaultlib \
-"../../../../wip.gen/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

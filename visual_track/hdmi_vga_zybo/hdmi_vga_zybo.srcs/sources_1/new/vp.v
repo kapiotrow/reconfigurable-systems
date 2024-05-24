@@ -35,8 +35,8 @@ module vp(
 
 
 //frame size
-localparam W = 640;
-localparam H = 480;
+localparam W = 1280;
+localparam H = 960;
 
 //ycbcr wires
 wire [23:0] pix_ycbcr;
@@ -110,11 +110,11 @@ rgb2ycbcr_0 convert(
 
 //--------------mean-filter-work_in_progress------------
 mean3x3 #(
-    .H_SIZE(660)
+    .H_SIZE(1650)
 ) mean (
     .clk(clk),
     .pixel_in(pix_ycbcr),
-    .de_in(de_tr),
+    .de_in(de_ycbcr),
     .hsync_in(h_sync_ycbcr),
     .vsync_in(v_sync_ycbcr),
     .pixel_out(pix_mean),

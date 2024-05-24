@@ -53,7 +53,7 @@
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT adder11_8
   PORT (
-    A : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    A : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     CLK : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(11 DOWNTO 0) 

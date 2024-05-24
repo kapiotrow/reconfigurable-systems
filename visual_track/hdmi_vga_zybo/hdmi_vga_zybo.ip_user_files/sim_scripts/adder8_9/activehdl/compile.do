@@ -53,7 +53,7 @@ vcom -work c_addsub_v12_0_17 -93  \
 "../../../ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib -93  \
-"../../../../wip.gen/sources_1/ip/adder8_9/sim/adder8_9.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder8_9/sim/adder8_9.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-// Date        : Fri May 17 12:41:18 2024
+// Date        : Fri May 24 14:36:01 2024
 // Host        : WINDELL-P5S529P running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.gen/sources_1/ip/adder10_11/adder10_11_stub.v
+//               c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder10_11/adder10_11_stub.v
 // Design      : adder10_11
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
@@ -16,10 +16,10 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "c_addsub_v12_0_17,Vivado 2023.2.2" *)
 module adder10_11(A, B, CLK, S)
-/* synthesis syn_black_box black_box_pad_pin="A[9:0],B[10:0],S[10:0]" */
+/* synthesis syn_black_box black_box_pad_pin="A[9:0],B[10:0],S[11:0]" */
 /* synthesis syn_force_seq_prim="CLK" */;
   input [9:0]A;
   input [10:0]B;
   input CLK /* synthesis syn_isclock = 1 */;
-  output [10:0]S;
+  output [11:0]S;
 endmodule

@@ -58,7 +58,7 @@ USE c_addsub_v12_0_17.c_addsub_v12_0_17;
 
 ENTITY adder11_8 IS
   PORT (
-    A : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    A : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     CLK : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
@@ -98,7 +98,7 @@ ARCHITECTURE adder11_8_arch OF adder11_8 IS
       C_HAS_SINIT : INTEGER
     );
     PORT (
-      A : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      A : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
       B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       CLK : IN STD_LOGIC;
       ADD : IN STD_LOGIC;
@@ -128,7 +128,7 @@ BEGIN
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "zynq",
       C_IMPLEMENTATION => 1,
-      C_A_WIDTH => 11,
+      C_A_WIDTH => 12,
       C_B_WIDTH => 8,
       C_OUT_WIDTH => 12,
       C_CE_OVERRIDES_SCLR => 0,

@@ -1,5 +1,5 @@
 verilog xil_defaultlib  \
-"../../../../wip.gen/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
 
 verilog xil_defaultlib "glbl.v"
 

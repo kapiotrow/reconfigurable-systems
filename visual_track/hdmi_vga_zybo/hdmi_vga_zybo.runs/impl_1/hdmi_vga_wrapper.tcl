@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.runs/impl_1/hdmi_vga_wrapper.tcl"
+  variable script "C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1/hdmi_vga_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -122,7 +124,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 8
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
@@ -132,39 +136,39 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.cache/wt [current_project]
-  set_property parent.project_path C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.cache/wt [current_project]
+  set_property parent.project_path C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.xpr [current_project]
   set_property ip_repo_paths {
   C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/vivado-library
   C:/Users/User/AppData/Roaming/Xilinx/ip_repo
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.cache/ip [current_project]
+  set_property ip_output_repo C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.runs/synth_1/hdmi_vga_wrapper.dcp
+  add_files -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/LUT_1/LUT.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/adder8_9/adder8_9.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/rgb2ycbcr_0_4/rgb2ycbcr_0.xci
-  add_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/sub_11_11/sub_11_11.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/mul_11_11/mul_11_11.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/add_22_22/add_22_22.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/delayLineBRAM/delayLineBRAM.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/add10_9/add10_9.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/adder10_11/adder10_11.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/adder11_9/adder11_9.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/adder11_8/adder11_8.xci
-  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/sources_1/ip/adder10_10/adder10_10.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/LUT_1/LUT.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_0_4/rgb2ycbcr_0.xci
+  add_files C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/sub_11_11/sub_11_11.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/mul_11_11/mul_11_11.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/add_22_22/add_22_22.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/delayLineBRAM/delayLineBRAM.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/add10_9/add10_9.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder10_11/adder10_11.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder11_8/adder11_8.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder10_10/adder10_10.xci
+  read_ip -quiet C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder8_9/adder8_9.xci
+  read_ip -quiet c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder12_11/adder12_11.xci
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/wip/wip.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
+  read_xdc C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

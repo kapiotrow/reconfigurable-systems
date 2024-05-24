@@ -58,7 +58,7 @@ adder10_11 your_instance_name (
   .A(A),      // input wire [9 : 0] A
   .B(B),      // input wire [10 : 0] B
   .CLK(CLK),  // input wire CLK
-  .S(S)      // output wire [10 : 0] S
+  .S(S)      // output wire [11 : 0] S
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

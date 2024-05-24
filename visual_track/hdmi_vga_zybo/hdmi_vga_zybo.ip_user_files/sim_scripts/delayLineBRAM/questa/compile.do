@@ -20,7 +20,7 @@ vlog -work blk_mem_gen_v8_4_7  -incr -mfcu  \
 "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  \
-"../../../../wip.gen/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

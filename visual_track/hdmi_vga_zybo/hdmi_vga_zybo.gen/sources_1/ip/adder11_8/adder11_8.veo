@@ -55,7 +55,7 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 adder11_8 your_instance_name (
-  .A(A),      // input wire [10 : 0] A
+  .A(A),      // input wire [11 : 0] A
   .B(B),      // input wire [7 : 0] B
   .CLK(CLK),  // input wire CLK
   .S(S)      // output wire [11 : 0] S

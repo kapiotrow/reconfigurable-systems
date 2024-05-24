@@ -1,47 +1,47 @@
 # compile vhdl design source files
 vhdl xbip_utils_v3_0_12  \
-"../../../../wip.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 
 vhdl c_reg_fd_v12_0_8  \
-"../../../../wip.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
 
 vhdl xbip_dsp48_wrapper_v3_0_5  \
-"../../../../wip.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
 
 vhdl xbip_pipe_v3_0_8  \
-"../../../../wip.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
 
 vhdl xbip_dsp48_addsub_v3_0_8  \
-"../../../../wip.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
 
 vhdl xbip_addsub_v3_0_8  \
-"../../../../wip.ip_user_files/ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
 
 vhdl c_addsub_v12_0_17  \
-"../../../../wip.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
 
 vhdl xil_defaultlib  \
-"../../../../wip.gen/sources_1/ip/add_22_22/sim/add_22_22.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/add_22_22/sim/add_22_22.vhd" \
 
 vhdl xbip_bram18k_v3_0_8  \
-"../../../../wip.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
 
 vhdl mult_gen_v12_0_20  \
-"../../../../wip.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
 
 vhdl xil_defaultlib  \
-"../../../../wip.gen/sources_1/ip/mul_11_11/sim/mul_11_11.vhd" \
-"../../../../wip.gen/sources_1/ip/sub_11_11/sim/sub_11_11.vhd" \
-"../../../../wip.gen/sources_1/ip/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
-"../../../../wip.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" \
-"../../../../wip.gen/sources_1/ip/adder11_8/sim/adder11_8.vhd" \
-"../../../../wip.gen/sources_1/ip/adder10_11/sim/adder10_11.vhd" \
-"../../../../wip.gen/sources_1/ip/adder11_9/sim/adder11_9.vhd" \
-"../../../../wip.gen/sources_1/ip/adder10_10/sim/adder10_10.vhd" \
-"../../../../wip.gen/sources_1/ip/add10_9/sim/add10_9.vhd" \
-"../../../../wip.gen/sources_1/ip/adder8_9/sim/adder8_9.vhd" \
-"../../../../wip.gen/sources_1/ip/rgb2ycbcr_0_4/src/Adder/sim/Adder.vhd" \
-"../../../../wip.gen/sources_1/ip/rgb2ycbcr_0_4/src/Multiplier/sim/Multiplier.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/mul_11_11/sim/mul_11_11.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/sub_11_11/sim/sub_11_11.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder11_8/sim/adder11_8.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder12_11/sim/adder12_11.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder10_11/sim/adder10_11.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder10_10/sim/adder10_10.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/add10_9/sim/add10_9.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder8_9/sim/adder8_9.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/Adder/sim/Adder.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/Multiplier/sim/Multiplier.vhd" \
 
 # Do not sort compile order
 nosort

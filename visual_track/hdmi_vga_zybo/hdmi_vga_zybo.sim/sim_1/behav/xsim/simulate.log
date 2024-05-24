@@ -10,4 +10,4 @@ Block Memory Generator module tb_hdmi.vp_i.erosion.longDelay.BRAM.inst.\native_m
 out  0.ppm saved
 out  1.ppm saved
 out  2.ppm saved
-INFO: xsimkernel Simulation Memory Usage: 23872 KB (Peak: 23872 KB), Simulation CPU Usage: 65124 ms
+INFO: xsimkernel Simulation Memory Usage: 23936 KB (Peak: 23936 KB), Simulation CPU Usage: 37781 ms

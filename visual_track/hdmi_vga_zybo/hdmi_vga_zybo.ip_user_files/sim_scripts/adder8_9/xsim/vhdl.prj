@@ -20,7 +20,7 @@ vhdl c_addsub_v12_0_17  \
 "../../../ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
 
 vhdl xil_defaultlib  \
-"../../../../wip.gen/sources_1/ip/adder8_9/sim/adder8_9.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder8_9/sim/adder8_9.vhd" \
 
 # Do not sort compile order
 nosort
