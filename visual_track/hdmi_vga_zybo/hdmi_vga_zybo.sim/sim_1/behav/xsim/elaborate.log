@@ -10,15 +10,18 @@ WARNING: [VRFC 10-9380] size mismatch in mixed-language port association of VHDL
 WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:97]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mean3x3.v:94]
 WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 12 for port 'addra' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:69]
+WARNING: [VRFC 10-3091] actual bit length 27 differs from formal bit length 11 for port 'dina' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:70]
+WARNING: [VRFC 10-3091] actual bit length 27 differs from formal bit length 11 for port 'douta' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:71]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mean3x3.v:107]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:87]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'A' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/centroid.v:106]
 WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 11 for port 'A' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/centroid.v:114]
 WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 11 for port 'A' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/centroid.v:122]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:78]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 27 for port 'dina' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:70]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 27 for port 'douta' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:71]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/dilation.v:76]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/erosion5x5.v:76]
+WARNING: [VRFC 10-3129] assignment to input 'vsync_out' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:165]
 WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:96]
 WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:97]
 Completed static elaboration
@@ -113,9 +116,32 @@ Compiling architecture adder11_8_arch of entity xil_defaultlib.adder11_8 [adder1
 Compiling module xil_defaultlib.register(N=19)
 Compiling module xil_defaultlib.delay_line(N=19,DELAY=4)
 Compiling module xil_defaultlib.delay_line(N=1,DELAY=3)
-Compiling module xil_defaultlib.mean3x3(H_SIZE=660)
-Compiling module xil_defaultlib.tresholding
+Compiling module xil_defaultlib.mean3x3(H_SIZE=1650)
+Compiling module xil_defaultlib.register(N=11)
+Compiling module xil_defaultlib.delay_line(N=11,DELAY=1)
+Compiling module xil_defaultlib.delayLinieBRAM_WP(WIDTH=11)
+Compiling module xil_defaultlib.check_context
+Compiling architecture synth of entity xbip_addsub_v3_0_8.xbip_addsub_v3_0_8_viv [\xbip_addsub_v3_0_8_viv(c_xdevic...]
+Compiling architecture synth of entity c_addsub_v12_0_17.c_addsub_v12_0_17_viv [\c_addsub_v12_0_17_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_17.c_addsub_v12_0_17 [\c_addsub_v12_0_17(c_xdevicefami...]
+Compiling architecture adder_signed9_10_arch of entity xil_defaultlib.adder_signed9_10 [adder_signed9_10_default]
+Compiling architecture synth of entity xbip_addsub_v3_0_8.xbip_addsub_v3_0_8_viv [\xbip_addsub_v3_0_8_viv(c_xdevic...]
+Compiling architecture synth of entity c_addsub_v12_0_17.c_addsub_v12_0_17_viv [\c_addsub_v12_0_17_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_17.c_addsub_v12_0_17 [\c_addsub_v12_0_17(c_xdevicefami...]
+Compiling architecture adder_signed11_11_arch of entity xil_defaultlib.adder_signed11_11 [adder_signed11_11_default]
+Compiling module xil_defaultlib.delay_line(N=1,DELAY=2)
+Compiling module xil_defaultlib.derivative
+Compiling module xil_defaultlib.abs
+Compiling architecture synth of entity xbip_addsub_v3_0_8.xbip_addsub_v3_0_8_viv [\xbip_addsub_v3_0_8_viv(c_xdevic...]
+Compiling architecture synth of entity c_addsub_v12_0_17.c_addsub_v12_0_17_viv [\c_addsub_v12_0_17_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_17.c_addsub_v12_0_17 [\c_addsub_v12_0_17(c_xdevicefami...]
+Compiling architecture adder11_11_arch of entity xil_defaultlib.adder11_11 [adder11_11_default]
 Compiling module xil_defaultlib.register(N=3)
+Compiling module xil_defaultlib.delay_line(N=3,DELAY=4)
+Compiling module xil_defaultlib.context3x3(H_SIZE=660)
+Compiling module xil_defaultlib.scale
+Compiling module xil_defaultlib.sobel3x3(H_SIZE=660)
+Compiling module xil_defaultlib.tresholding
 Compiling module xil_defaultlib.delay_line(N=3,DELAY=1)
 Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="z...
 Compiling module xil_defaultlib.LUT

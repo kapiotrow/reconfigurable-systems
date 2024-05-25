@@ -262,7 +262,7 @@
       },
       "vp_0": {
         "vlnv": "xilinx.com:module_ref:vp:1.0",
-        "ip_revision": "1716583218",
+        "ip_revision": "1716663888",
         "xci_name": "hdmi_vga_vp_0_0",
         "xci_path": "ip\\hdmi_vga_vp_0_0\\hdmi_vga_vp_0_0.xci",
         "inst_hier_path": "vp_0",

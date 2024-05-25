@@ -92,6 +92,11 @@ wire [23:0] pix_mean;
 wire de_mean;
 wire hsync_mean;
 wire vsync_mean;
+//sobel filter wires
+wire [23:0] pix_sob;
+wire de_sob;
+wire hsync_sob;
+wire vsync_sob;
 
 
 //---------------RGB-to-YCbCr-conversion----------------   
@@ -108,7 +113,7 @@ rgb2ycbcr_0 convert(
 );
 
 
-//--------------mean-filter-work_in_progress------------
+//--------------mean-filter----------------------------
 mean3x3 #(
     .H_SIZE(1650)
 ) mean (
@@ -122,6 +127,23 @@ mean3x3 #(
     .hsync_out(hsync_mean),
     .vsync_out(vsync_mean)
 );
+
+
+//--------------sobel-filter-----------------------------
+sobel3x3 #(
+    .H_SIZE(1650)
+) sobel (
+    .clk(clk),
+    .pixel_in(pix_ycbcr[23:16]),
+    .de_in(de_ycbcr),
+    .hsync_in(h_sync_ycbcr),
+    .vsync_in(v_sync_ycbcr),
+    .pixel_out(pix_sob),
+    .de_out(de_sob),
+    .hsync_out(hsync_sob),
+    .vsync_out(vsync_sob)
+);
+
 
 //--------------tresholding-YCbCr-----------------------
 tresholding tr(
@@ -278,7 +300,7 @@ mux choose_out (
     .idata4({de_c, hsync_c, vsync_c, pix_c}),
     .idata5({de_b, hsync_b, vsync_b, pix_b}),
     .idata6({de_circ, hsync_circ, vsync_circ, pix_circ}),
-    .idata7({de_mean, hsync_mean, vsync_mean, pix_mean}),
+    .idata7({de_sob, hsync_sob, vsync_sob, pix_sob}),
     .odata({de_out, h_sync_out, v_sync_out, pixel_out})
 );
 

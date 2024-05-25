@@ -19,10 +19,19 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sub_11_11 |
 # IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==c_addsub_0 || ORIG_REF_NAME==c_addsub_0} -quiet] -quiet
 
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder11_11/adder11_11.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder11_11 || ORIG_REF_NAME==adder11_11} -quiet] -quiet
+
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder_signed11_11/adder_signed11_11.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder_signed11_11 || ORIG_REF_NAME==adder_signed11_11} -quiet] -quiet
+
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder_signed9_10/adder_signed9_10.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder_signed9_10 || ORIG_REF_NAME==adder_signed9_10} -quiet] -quiet
+
 # IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder11_8/adder11_8.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder11_8 || ORIG_REF_NAME==adder11_8} -quiet] -quiet
 
-# IP: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder12_11/adder12_11.xci
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder12_11/adder12_11.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder12_11 || ORIG_REF_NAME==adder12_11} -quiet] -quiet
 
 # IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder10_11/adder10_11.xci
@@ -76,10 +85,19 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 # IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==c_addsub_0 || ORIG_REF_NAME==c_addsub_0} -quiet] -quiet
 
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder11_11/adder11_11.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder11_11 || ORIG_REF_NAME==adder11_11} -quiet] -quiet
+
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder_signed11_11/adder_signed11_11.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder_signed11_11 || ORIG_REF_NAME==adder_signed11_11} -quiet] -quiet
+
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder_signed9_10/adder_signed9_10.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder_signed9_10 || ORIG_REF_NAME==adder_signed9_10} -quiet] -quiet
+
 # IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder11_8/adder11_8.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder11_8 || ORIG_REF_NAME==adder11_8} -quiet] -quiet
 
-# IP: c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder12_11/adder12_11.xci
+# IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder12_11/adder12_11.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==adder12_11 || ORIG_REF_NAME==adder12_11} -quiet] -quiet
 
 # IP: C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/ip/adder10_11/adder10_11.xci

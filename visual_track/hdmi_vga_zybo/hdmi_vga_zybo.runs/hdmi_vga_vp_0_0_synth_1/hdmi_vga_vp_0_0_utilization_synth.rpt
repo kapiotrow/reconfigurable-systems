@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-| Date         : Fri May 24 22:42:24 2024
+| Date         : Sat May 25 21:06:47 2024
 | Host         : WINDELL-P5S529P running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hdmi_vga_vp_0_0_utilization_synth.rpt -pb hdmi_vga_vp_0_0_utilization_synth.pb
 | Design       : hdmi_vga_vp_0_0
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  855 |     0 |          0 |     17600 |  4.86 |
-|   LUT as Logic             |  760 |     0 |          0 |     17600 |  4.32 |
-|   LUT as Memory            |   95 |     0 |          0 |      6000 |  1.58 |
+| Slice LUTs*                |  795 |     0 |          0 |     17600 |  4.52 |
+|   LUT as Logic             |  744 |     0 |          0 |     17600 |  4.23 |
+|   LUT as Memory            |   51 |     0 |          0 |      6000 |  0.85 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |   95 |     0 |            |           |       |
-| Slice Registers            | 1460 |     0 |          0 |     35200 |  4.15 |
-|   Register as Flip Flop    | 1460 |     0 |          0 |     35200 |  4.15 |
+|     LUT as Shift Register  |   51 |     0 |            |           |       |
+| Slice Registers            |  835 |     0 |          0 |     35200 |  2.37 |
+|   Register as Flip Flop    |  835 |     0 |          0 |     35200 |  2.37 |
 |   Register as Latch        |    0 |     0 |          0 |     35200 |  0.00 |
 | F7 Muxes                   |    0 |     0 |          0 |      8800 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |      4400 |  0.00 |
@@ -60,8 +60,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 69    |          Yes |         Set |            - |
-| 1391  |          Yes |       Reset |            - |
+| 24    |          Yes |         Set |            - |
+| 811   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,16 +151,16 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 1391 |        Flop & Latch |
-| LUT6     |  290 |                 LUT |
-| LUT4     |  268 |                 LUT |
-| LUT2     |  184 |                 LUT |
+| FDRE     |  811 |        Flop & Latch |
+| LUT2     |  315 |                 LUT |
+| LUT6     |  214 |                 LUT |
+| LUT4     |  166 |                 LUT |
+| LUT3     |  127 |                 LUT |
 | LUT5     |  112 |                 LUT |
-| CARRY4   |  106 |          CarryLogic |
-| LUT3     |   99 |                 LUT |
-| SRL16E   |   95 |  Distributed Memory |
-| FDSE     |   69 |        Flop & Latch |
-| LUT1     |   52 |                 LUT |
+| CARRY4   |  111 |          CarryLogic |
+| SRL16E   |   51 |  Distributed Memory |
+| LUT1     |   47 |                 LUT |
+| FDSE     |   24 |        Flop & Latch |
 | DSP48E1  |   17 |    Block Arithmetic |
 +----------+------+---------------------+
 
@@ -168,26 +168,31 @@ Warning! LUT value is adjusted to account for LUT combining.
 8. Black Boxes
 --------------
 
-+---------------------------------+------+
-|             Ref Name            | Used |
-+---------------------------------+------+
-| hdmi_vga_vp_0_0_c_addsub_0      |    5 |
-| hdmi_vga_vp_0_0_delayLineBRAM   |    4 |
-| hdmi_vga_vp_0_0_adder8_9        |    2 |
-| hdmi_vga_vp_0_0_sub_11_11_HD382 |    1 |
-| hdmi_vga_vp_0_0_sub_11_11       |    1 |
-| hdmi_vga_vp_0_0_mul_11_11_HD381 |    1 |
-| hdmi_vga_vp_0_0_mul_11_11       |    1 |
-| hdmi_vga_vp_0_0_adder8_9_HD385  |    1 |
-| hdmi_vga_vp_0_0_adder12_11      |    1 |
-| hdmi_vga_vp_0_0_adder11_8       |    1 |
-| hdmi_vga_vp_0_0_adder10_11      |    1 |
-| hdmi_vga_vp_0_0_adder10_10      |    1 |
-| hdmi_vga_vp_0_0_add_22_22       |    1 |
-| hdmi_vga_vp_0_0_add10_9         |    1 |
-| delayLineBRAM_HD384             |    1 |
-| c_addsub_0_HD383                |    1 |
-+---------------------------------+------+
++----------------------------------------+------+
+|                Ref Name                | Used |
++----------------------------------------+------+
+| hdmi_vga_vp_0_0_adder_signed9_10       |    7 |
+| hdmi_vga_vp_0_0_delayLineBRAM          |    6 |
+| hdmi_vga_vp_0_0_c_addsub_0             |    5 |
+| hdmi_vga_vp_0_0_adder_signed11_11      |    5 |
+| hdmi_vga_vp_0_0_adder8_9               |    2 |
+| hdmi_vga_vp_0_0_sub_11_11_HD409        |    1 |
+| hdmi_vga_vp_0_0_sub_11_11              |    1 |
+| hdmi_vga_vp_0_0_mul_11_11_HD408        |    1 |
+| hdmi_vga_vp_0_0_mul_11_11              |    1 |
+| hdmi_vga_vp_0_0_adder_signed9_10_HD413 |    1 |
+| hdmi_vga_vp_0_0_adder8_9_HD414         |    1 |
+| hdmi_vga_vp_0_0_adder12_11             |    1 |
+| hdmi_vga_vp_0_0_adder11_8              |    1 |
+| hdmi_vga_vp_0_0_adder11_11             |    1 |
+| hdmi_vga_vp_0_0_adder10_11             |    1 |
+| hdmi_vga_vp_0_0_adder10_10             |    1 |
+| hdmi_vga_vp_0_0_add_22_22              |    1 |
+| hdmi_vga_vp_0_0_add10_9                |    1 |
+| delayLineBRAM_HD411                    |    1 |
+| c_addsub_0_HD410                       |    1 |
+| adder_signed11_11_HD412                |    1 |
++----------------------------------------+------+
 
 
 9. Instantiated Netlists

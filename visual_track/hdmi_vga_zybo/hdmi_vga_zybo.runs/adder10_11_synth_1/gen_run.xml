@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="adder10_11_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1716554129">
   <File Type="PA-TCL" Name="adder10_11.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="adder10_11_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="adder10_11_reports.tcl"/>
   <File Type="RDS-RDS" Name="adder10_11.vds"/>
   <File Type="RDS-UTIL" Name="adder10_11_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="adder10_11_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="adder10_11.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="adder10_11_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="adder10_11_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/adder10_11" RelGenDir="$PGENDIR/adder10_11">
     <File Path="$PSRCDIR/sources_1/ip/adder10_11/adder10_11.xci">
       <FileInfo>

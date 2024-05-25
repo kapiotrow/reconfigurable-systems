@@ -6,11 +6,15 @@ verilog xil_defaultlib  --include "../../../../hdmi_vga_zybo.gen/sources_1/bd/hd
 "../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v" \
 "../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/rgb2ycbcr.v" \
 "../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/sim/rgb2ycbcr_0.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/abs.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/imports/sources_1/new/accumulator.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/bounding_box.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/centroid.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/check_context.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/context3x3.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/imports/new/delay_line.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/derivative.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/dilation.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/erosion5x5.v" \
@@ -20,6 +24,8 @@ verilog xil_defaultlib  --include "../../../../hdmi_vga_zybo.gen/sources_1/bd/hd
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/median5x5.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/mux.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/imports/sources_1/imports/new/register.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/scale.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/new/sobel3x3.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/tresholding.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/vis_box.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/new/vis_centroid.v" \

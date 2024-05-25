@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-| Date         : Fri May 24 21:48:49 2024
+| Date         : Sat May 25 14:10:34 2024
 | Host         : WINDELL-P5S529P running 64-bit major release  (build 9200)
 | Command      : report_utilization -file delayLineBRAM_utilization_synth.rpt -pb delayLineBRAM_utilization_synth.pb
 | Design       : delayLineBRAM
@@ -69,10 +69,11 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |    3 |     0 |          0 |        60 |  5.00 |
-|   RAMB36/FIFO*    |    3 |     0 |          0 |        60 |  5.00 |
-|     RAMB36E1 only |    3 |       |            |           |       |
-|   RAMB18          |    0 |     0 |          0 |       120 |  0.00 |
+| Block RAM Tile    |  1.5 |     0 |          0 |        60 |  2.50 |
+|   RAMB36/FIFO*    |    1 |     0 |          0 |        60 |  1.67 |
+|     RAMB36E1 only |    1 |       |            |           |       |
+|   RAMB18          |    1 |     0 |          0 |       120 |  0.83 |
+|     RAMB18E1 only |    1 |       |            |           |       |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -149,7 +150,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| RAMB36E1 |    3 |        Block Memory |
+| RAMB36E1 |    1 |        Block Memory |
+| RAMB18E1 |    1 |        Block Memory |
 +----------+------+---------------------+
 
 

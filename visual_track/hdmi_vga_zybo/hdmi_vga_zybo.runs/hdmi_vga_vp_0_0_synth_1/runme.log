@@ -27,9 +27,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13028
+INFO: [Synth 8-7075] Helper process launched with PID 23564
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1357.508 ; gain = 439.027
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1359.926 ; gain = 440.164
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'delay_line' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:65]
 INFO: [Synth 8-9937] previous definition of design element 'delay_line' is here [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/new/delay_line.v:65]
@@ -116,20 +116,22 @@ INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__pa
 INFO: [Synth 8-6157] synthesizing module 'delayLinieBRAM_WP' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
 	Parameter WIDTH bound to: 27 - type: integer 
 	Parameter BRAM_SIZE_W bound to: 13 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/delayLineBRAM_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'delayLineBRAM' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/delayLineBRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/delayLineBRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'delayLineBRAM' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/delayLineBRAM_stub.v:6]
 WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (12) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:69]
+WARNING: [Synth 8-689] width (27) of port connection 'dina' does not match port width (11) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:70]
+WARNING: [Synth 8-689] width (27) of port connection 'douta' does not match port width (11) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:71]
 INFO: [Synth 8-6155] done synthesizing module 'delayLinieBRAM_WP' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
-INFO: [Synth 8-6157] synthesizing module 'adder8_9' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder8_9_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'adder8_9' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder8_9_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'add10_9' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/add10_9_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'add10_9' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/add10_9_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'adder10_10' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder10_10_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'adder10_10' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder10_10_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'adder10_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder10_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'adder10_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder10_11_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'adder12_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder12_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'adder12_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder12_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adder8_9' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder8_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder8_9' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder8_9_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add10_9' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/add10_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add10_9' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/add10_9_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adder10_10' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder10_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder10_10' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder10_10_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adder10_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder10_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder10_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder10_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adder12_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder12_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder12_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder12_11_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized2' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 8 - type: integer 
 	Parameter DELAY bound to: 3 - type: integer 
@@ -137,8 +139,8 @@ INFO: [Synth 8-6157] synthesizing module 'register__parameterized2' [c:/Users/Us
 	Parameter N bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'register__parameterized2' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized2' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
-INFO: [Synth 8-6157] synthesizing module 'adder11_8' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder11_8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'adder11_8' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/adder11_8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adder11_8' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder11_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder11_8' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder11_8_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized3' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 19 - type: integer 
 	Parameter DELAY bound to: 4 - type: integer 
@@ -151,15 +153,63 @@ INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__paramet
 	Parameter DELAY bound to: 3 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized4' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'mean3x3' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mean3x3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tresholding' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/tresholding.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'tresholding' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/tresholding.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sobel3x3' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/sobel3x3.v:23]
+	Parameter H_SIZE bound to: 1650 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'context3x3' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:23]
+	Parameter H_SIZE bound to: 1650 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized5' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
-	Parameter N bound to: 3 - type: integer 
+	Parameter N bound to: 11 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'register__parameterized4' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
-	Parameter N bound to: 3 - type: integer 
+	Parameter N bound to: 11 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'register__parameterized4' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized5' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delayLinieBRAM_WP__parameterized0' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter BRAM_SIZE_W bound to: 13 - type: integer 
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (12) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'delayLinieBRAM_WP__parameterized0' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-6157] synthesizing module 'check_context' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/check_context.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'check_context' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/check_context.v:23]
+INFO: [Synth 8-6157] synthesizing module 'derivative' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/derivative.v:23]
+	Parameter MODE bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'adder_signed9_10' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder_signed9_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder_signed9_10' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder_signed9_10_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adder_signed11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder_signed11_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder_signed11_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder_signed11_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized6' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+	Parameter N bound to: 1 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized6' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'derivative' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/derivative.v:23]
+INFO: [Synth 8-6157] synthesizing module 'derivative__parameterized0' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/derivative.v:23]
+	Parameter MODE bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'derivative__parameterized0' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/derivative.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:138]
+INFO: [Synth 8-6157] synthesizing module 'abs' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/abs.v:23]
+WARNING: [Synth 8-6104] Input port 'pixel_out' has an internal driver [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/abs.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'abs' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/abs.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:143]
+INFO: [Synth 8-6157] synthesizing module 'adder11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder11_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adder11_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/adder11_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized7' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+	Parameter N bound to: 3 - type: integer 
+	Parameter DELAY bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized5' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized5' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized7' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+WARNING: [Synth 8-6104] Input port 'vsync_out' has an internal driver [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'context3x3' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scale' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/scale.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scale' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/scale.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sobel3x3' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/sobel3x3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tresholding' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/tresholding.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tresholding' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/tresholding.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized8' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+	Parameter N bound to: 3 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized8' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 INFO: [Synth 8-638] synthesizing module 'LUT' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/LUT_1/synth/LUT.vhd:67]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
@@ -202,11 +252,11 @@ INFO: [Synth 8-6157] synthesizing module 'centroid' [C:/Users/User/Documents/stu
 	Parameter IMG_H bound to: 960 - type: integer 
 	Parameter IMG_W bound to: 1280 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'accumulator' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/sources_1/new/accumulator.v:23]
-INFO: [Synth 8-6157] synthesizing module 'c_addsub_0' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/c_addsub_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'c_addsub_0' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/c_addsub_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'register__parameterized5' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'c_addsub_0' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/c_addsub_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_addsub_0' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/c_addsub_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized6' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'register__parameterized5' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized6' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'accumulator' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/sources_1/new/accumulator.v:23]
 WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (11) of module 'accumulator' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/centroid.v:106]
 WARNING: [Synth 8-689] width (33) of port connection 'A' does not match port width (11) of module 'accumulator' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/centroid.v:114]
@@ -247,55 +297,56 @@ INFO: [Synth 8-6157] synthesizing module 'vis_box' [C:/Users/User/Documents/stud
 INFO: [Synth 8-6157] synthesizing module 'bounding_box' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/bounding_box.v:23]
 	Parameter IMG_H bound to: 960 - type: integer 
 	Parameter IMG_W bound to: 1280 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized6' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized9' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 2 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'register__parameterized6' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized7' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
 	Parameter N bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'register__parameterized6' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized6' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized7' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized7' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized9' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized10' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 1 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized7' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized10' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'bounding_box' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/bounding_box.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'vis_box' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_box.v:23]
 INFO: [Synth 8-6157] synthesizing module 'vis_centroid_circle' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:23]
 	Parameter IMG_H bound to: 960 - type: integer 
 	Parameter IMG_W bound to: 1280 - type: integer 
 	Parameter R_SQR bound to: 25 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sub_11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/sub_11_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sub_11_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/sub_11_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sub_11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/sub_11_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sub_11_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/sub_11_11_stub.v:6]
 WARNING: [Synth 8-689] width (42) of port connection 'A' does not match port width (11) of module 'sub_11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:96]
 WARNING: [Synth 8-689] width (42) of port connection 'B' does not match port width (11) of module 'sub_11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:97]
-INFO: [Synth 8-6157] synthesizing module 'mul_11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/mul_11_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mul_11_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/mul_11_11_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'add_22_22' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/add_22_22_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'add_22_22' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-27076-WINDELL-P5S529P/realtime/add_22_22_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized8' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul_11_11' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/mul_11_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mul_11_11' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/mul_11_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add_22_22' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/add_22_22_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add_22_22' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/.Xil/Vivado-19464-WINDELL-P5S529P/realtime/add_22_22_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized11' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 27 - type: integer 
 	Parameter DELAY bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized8' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized11' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'vis_centroid_circle' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v:23]
 INFO: [Synth 8-6157] synthesizing module 'median5x5' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:23]
 	Parameter H_SIZE bound to: 1650 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized9' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized12' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 4 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'register__parameterized7' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized8' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
 	Parameter N bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'register__parameterized7' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized9' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
-INFO: [Synth 8-6157] synthesizing module 'delayLinieBRAM_WP__parameterized0' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized8' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized12' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delayLinieBRAM_WP__parameterized1' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter BRAM_SIZE_W bound to: 13 - type: integer 
 WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (12) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:69]
-WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (27) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'delayLinieBRAM_WP__parameterized0' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized10' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'dina' does not match port width (11) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:70]
+WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (11) of module 'delayLineBRAM' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'delayLinieBRAM_WP__parameterized1' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_delay_line__parameterized13' [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 	Parameter N bound to: 4 - type: integer 
 	Parameter DELAY bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized10' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_delay_line__parameterized13' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_4/src/delay_line.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'median5x5' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:23]
 INFO: [Synth 8-6157] synthesizing module 'dilation' [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/dilation.v:23]
 	Parameter H_SIZE bound to: 1650 - type: integer 
@@ -308,6 +359,14 @@ INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/studia/
 INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mux.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'vp' (0#1) [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_vga_vp_0_0' (0#1) [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/synth/hdmi_vga_vp_0_0.v:53]
+WARNING: [Synth 8-3848] Net abs_Sx in module/entity context3x3 does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:42]
+WARNING: [Synth 8-3848] Net abs_Sy in module/entity context3x3 does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/context3x3.v:43]
+WARNING: [Synth 8-3848] Net vsync_out in module/entity sobel3x3 does not have driver. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/sobel3x3.v:34]
+WARNING: [Synth 8-7129] Port din[15] in module delayLinieBRAM_WP__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[14] in module delayLinieBRAM_WP__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[13] in module delayLinieBRAM_WP__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[12] in module delayLinieBRAM_WP__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[11] in module delayLinieBRAM_WP__parameterized1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLK in module mult_gen_v12_0_20_delay_line is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CE in module mult_gen_v12_0_20_delay_line is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_20_delay_line is either unconnected or has no load
@@ -403,25 +462,20 @@ WARNING: [Synth 8-7129] Port i_ce in module dist_mem_gen_v8_0_14_synth is either
 WARNING: [Synth 8-7129] Port qdpo_ce in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
 WARNING: [Synth 8-7129] Port qdpo_clk in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
 WARNING: [Synth 8-7129] Port qdpo_rst in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
-WARNING: [Synth 8-7129] Port qdpo_srst in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
-WARNING: [Synth 8-7129] Port d[7] in module dist_mem_gen_v8_0_14 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port d[6] in module dist_mem_gen_v8_0_14 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port d[5] in module dist_mem_gen_v8_0_14 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port d[4] in module dist_mem_gen_v8_0_14 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1604.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1605.656 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 161 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -432,6 +486,10 @@ Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/vis
 Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/mean/longDelay1/BRAM'
 Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/mean/longDelay2/BRAM'
 Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/mean/longDelay2/BRAM'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/sobel/context/longDelay1/BRAM'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/sobel/context/longDelay1/BRAM'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/sobel/context/longDelay2/BRAM'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/sobel/context/longDelay2/BRAM'
 Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/median/longDelay/BRAM'
 Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/median/longDelay/BRAM'
 Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'inst/dil/longDelay/BRAM'
@@ -460,6 +518,36 @@ Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/vis
 Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'inst/vis_circ/centr/acc_m10/a'
 Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'inst/vis_circ/centr/acc_m01/a'
 Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'inst/vis_circ/centr/acc_m01/a'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder11_11/adder11_11/adder11_11_in_context.xdc] for cell 'inst/sobel/context/addS'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder11_11/adder11_11/adder11_11_in_context.xdc] for cell 'inst/sobel/context/addS'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gx/addABCD'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gx/addABCD'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gx/addFGHI'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gx/addFGHI'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gx/add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gx/add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gy/addABCD'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gy/addABCD'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gy/addFGHI'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gy/addFGHI'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gy/add'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed11_11/adder_signed11_11/adder_signed11_11_in_context.xdc] for cell 'inst/sobel/context/Gy/add'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addAB'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addAB'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addCD'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addCD'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addFG'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addFG'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addHI'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gx/addHI'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addAB'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addAB'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addCD'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addCD'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addFG'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addFG'
+Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addHI'
+Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_signed9_10/adder_signed9_10/adder_signed9_10_in_context.xdc] for cell 'inst/sobel/context/Gy/addHI'
 Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder11_8/adder11_8/adder11_8_in_context.xdc] for cell 'inst/mean/add_i'
 Finished Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder11_8/adder11_8/adder11_8_in_context.xdc] for cell 'inst/mean/add_i'
 Parsing XDC File [c:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder12_11/adder12_11/adder12_11_in_context.xdc] for cell 'inst/mean/add_abcdefgh'
@@ -482,29 +570,31 @@ Parsing XDC File [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/vis
 Finished Parsing XDC File [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1604.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1605.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1604.312 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1605.656 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/dont_touch.xdc, line 59).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/dont_touch.xdc, line 68).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/mean/longDelay1/BRAM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/mean/longDelay2/BRAM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/longDelay1/BRAM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/longDelay2/BRAM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/median/longDelay/BRAM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/dil/longDelay/BRAM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/erosion/longDelay/BRAM. (constraint file  auto generated constraint).
@@ -519,6 +609,21 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/vis_centre/centr/acc_m01/a. 
 Applied set_property KEEP_HIERARCHY = SOFT for inst/vis_circ/centr/acc_m00/a. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/vis_circ/centr/acc_m10/a. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/vis_circ/centr/acc_m01/a. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/addS. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/add. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/add. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/addABCD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/addABCD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/addFGHI. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/addFGHI. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/addAB. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/addAB. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/addCD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/addCD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/addFG. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/addFG. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gx/addHI. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sobel/context/Gy/addHI. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/mean/add_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/mean/add_abcdefgh. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/mean/add_efgh. (constraint file  auto generated constraint).
@@ -554,7 +659,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/convert/inst/\addersVec[0].a
 Applied set_property KEEP_HIERARCHY = SOFT for inst/convert/inst/\addersVec[1].add . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/convert/inst/\addersVec[2].add . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'divider_32_20__xdcDup__1'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'divider_32_20__xdcDup__2'
@@ -597,7 +702,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'divider_32_20'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -623,7 +728,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'centr/div_y/result_
 WARNING: [Synth 8-3936] Found unconnected internal register 'centr/div_x/result_reg_reg' and it is trimmed from '32' to '11' bits. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v:84]
 WARNING: [Synth 8-3936] Found unconnected internal register 'centr/div_y/result_reg_reg' and it is trimmed from '32' to '10' bits. [C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v:84]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
  Sort Area is  gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg_0 : 0 0 : 3338 3338 : Used 1 time 100
  Sort Area is  gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg_2 : 0 0 : 3338 3338 : Used 1 time 100
@@ -638,19 +743,19 @@ Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elaps
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -668,37 +773,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -717,92 +822,99 @@ DSP Final Report (the ' indicates corresponding REG is set)
 |dsp                   | ((A'*B)')'            | 8      | 17     | -      | -      | 36     | 1    | 0    | -    | -    | -     | 1    | 1    | 
 |dsp                   | ((A'*B)')'            | 8      | 18     | -      | -      | 36     | 1    | 0    | -    | -    | -     | 1    | 1    | 
 |dsp                   | ((A'*B)')'            | 8      | 18     | -      | -      | 36     | 1    | 0    | -    | -    | -     | 1    | 1    | 
-|dsp__parameterized0_8 | (C+(A'*B')')'         | 20     | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
-|dsp__parameterized0_8 | (PCIN>>17+(A'*B'')')' | 0      | 15     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
-|dsp__parameterized0_6 | (C+(A'*B')')'         | 20     | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp__parameterized0_6 | (C+(A'*B')')'         | 0      | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
 |dsp__parameterized0_6 | (PCIN>>17+(A'*B'')')' | 0      | 15     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
-|dsp__parameterized0_1 | (C+(A'*B')')'         | 20     | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp__parameterized0_4 | (C+(A'*B')')'         | 0      | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp__parameterized0_4 | (PCIN>>17+(A'*B'')')' | 0      | 15     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp__parameterized0_1 | (C+(A'*B')')'         | 0      | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
 |dsp__parameterized0_1 | (PCIN>>17+(A'*B'')')' | 0      | 15     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
-|dsp__parameterized0   | (C+(A'*B')')'         | 20     | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp__parameterized0   | (C+(A'*B')')'         | 0      | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
 |dsp__parameterized0   | (PCIN>>17+(A'*B'')')' | 0      | 15     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
 +----------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |delayLineBRAM |         5|
-|2     |adder8_9      |         3|
-|3     |add10_9       |         1|
-|4     |adder10_10    |         1|
-|5     |adder10_11    |         1|
-|6     |adder12_11    |         1|
-|7     |adder11_8     |         1|
-|8     |c_addsub_0    |         6|
-|9     |sub_11_11     |         2|
-|10    |mul_11_11     |         2|
-|11    |add_22_22     |         1|
-+------+--------------+----------+
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |delayLineBRAM     |         7|
+|2     |adder8_9          |         3|
+|3     |add10_9           |         1|
+|4     |adder10_10        |         1|
+|5     |adder10_11        |         1|
+|6     |adder12_11        |         1|
+|7     |adder11_8         |         1|
+|8     |adder11_11        |         1|
+|9     |adder_signed9_10  |         8|
+|10    |adder_signed11_11 |         6|
+|11    |c_addsub_0        |         6|
+|12    |sub_11_11         |         2|
+|13    |mul_11_11         |         2|
+|14    |add_22_22         |         1|
++------+------------------+----------+
 
 Report Cell Usage: 
-+------+--------------+------+
-|      |Cell          |Count |
-+------+--------------+------+
-|1     |add10         |     1|
-|2     |add_22        |     1|
-|3     |adder10       |     2|
-|5     |adder11       |     1|
-|6     |adder12       |     1|
-|7     |adder8        |     1|
-|8     |adder8_9      |     2|
-|10    |c_addsub      |     1|
-|11    |c_addsub_0    |     5|
-|16    |delayLineBRAM |     5|
-|21    |mul_11        |     1|
-|22    |mul_11_11     |     1|
-|23    |sub_11        |     1|
-|24    |sub_11_11     |     1|
-|25    |CARRY4        |    88|
-|26    |DSP48E1       |    17|
-|29    |LUT1          |    52|
-|30    |LUT2          |   184|
-|31    |LUT3          |    99|
-|32    |LUT4          |   268|
-|33    |LUT5          |   112|
-|34    |LUT6          |   290|
-|35    |MUXCY         |    63|
-|36    |SRL16E        |    95|
-|37    |XORCY         |    72|
-|38    |FDRE          |  1391|
-|39    |FDSE          |    69|
-+------+--------------+------+
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |add10             |     1|
+|2     |add_22            |     1|
+|3     |adder10           |     2|
+|5     |adder11           |     2|
+|7     |adder12           |     1|
+|8     |adder8            |     1|
+|9     |adder8_9          |     2|
+|11    |adder_signed11    |     1|
+|12    |adder_signed11_11 |     5|
+|17    |adder_signed9     |     1|
+|18    |adder_signed9_10  |     7|
+|25    |c_addsub          |     1|
+|26    |c_addsub_0        |     5|
+|31    |delayLineBRAM     |     7|
+|38    |mul_11            |     1|
+|39    |mul_11_11         |     1|
+|40    |sub_11            |     1|
+|41    |sub_11_11         |     1|
+|42    |CARRY4            |    93|
+|43    |DSP48E1           |    17|
+|46    |LUT1              |    47|
+|47    |LUT2              |   315|
+|48    |LUT3              |   127|
+|49    |LUT4              |   166|
+|50    |LUT5              |   112|
+|51    |LUT6              |   214|
+|52    |MUXCY             |    63|
+|53    |SRL16E            |    51|
+|54    |XORCY             |    72|
+|55    |FDRE              |   811|
+|56    |FDSE              |    24|
++------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1605.656 ; gain = 685.895
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 1604.312 ; gain = 685.832
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1604.312 ; gain = 685.832
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1605.656 ; gain = 685.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1605.656 ; gain = 685.895
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1604.312 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 240 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1605.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1604.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1605.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 18 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 18 instances
 
 The system cannot find the path specified.
-Synth Design complete | Checksum: b8828622
+Synth Design complete | Checksum: 7bfa3dd
 INFO: [Common 17-83] Releasing license: Synthesis
-147 Infos, 120 Warnings, 2 Critical Warnings and 0 Errors encountered.
+177 Infos, 131 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1604.312 ; gain = 1082.379
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1605.656 ; gain = 1082.570
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Coretcl 2-1174] Renamed 362 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1604.312 ; gain = 0.000
+INFO: [Coretcl 2-1174] Renamed 280 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1605.656 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Documents/studia/sem6/reconfigurable-systems/visual_track/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/hdmi_vga_vp_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_vga_vp_0_0_utilization_synth.rpt -pb hdmi_vga_vp_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 24 22:42:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat May 25 21:06:49 2024...
